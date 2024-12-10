@@ -524,6 +524,10 @@ p{
 
 @media (max-width: 1024px) {
 
+    .access {
+        padding: 0;
+    }
+
     .container-highlight{
         display: block;
     }
