@@ -249,7 +249,7 @@ body{
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    font-family: 'Uncial Antiqua', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 14px;
     padding: 15px;
@@ -484,7 +484,7 @@ p{
 .splash h1{
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Uncial Antiqua', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .splash p{
@@ -522,7 +522,7 @@ p{
 /*****************/
 /* MEDIA QUERIES */
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 
     .container-highlight{
         display: block;
@@ -537,10 +537,8 @@ p{
         border-bottom-right-radius: 25px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(0, 0, 0, 0.9);
         background-position: 79%;
         background-size: cover;
-        background-repeat: no-repeat;
         margin-bottom: 1.5rem;
     }
 
