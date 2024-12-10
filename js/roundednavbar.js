@@ -36,6 +36,10 @@ function boxNavBar() {
   });
   $('#logo').css({
     'font-size': '20px'
+  });  
+  $('.btn-queries').css({
+    'top': '10px',
+    'transition': '.2s'
   });
 }
 
@@ -57,6 +61,10 @@ function roundedNav() {
   });
   $('#logo').css({
     'font-size': '30px'
+  });
+  $('.btn-queries').css({
+    'top': '35px',
+    'transition': '.2s'
   });
 }
 
