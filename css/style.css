@@ -416,11 +416,9 @@ button.close-alert-box {
 /* item édit */
 
 .list-group-item {
-    background:none;
+    background:transparent;
     color: #fff;
-    border: 1px solid aquamarine;
-    background-image: url('../img/module_metal.png');
-    background-position: left;
+    border-color: hsla(0, 0%, 100%, 0.356);
 }
 
 /****************/
