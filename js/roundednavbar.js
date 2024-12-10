@@ -36,9 +36,6 @@ function boxNavBar() {
   });
   $('#logo').css({
     'font-size': '20px'
-  });  
-  $('.header-right').css({
-    'margin-top': '0'
   });
 }
 
@@ -60,9 +57,6 @@ function roundedNav() {
   });
   $('#logo').css({
     'font-size': '30px'
-  });
-  $('.header-right').css({
-    'margin-top': '10px'
   });
 }
 
