@@ -68,6 +68,39 @@ function roundedNav() {
   });
 }
 
+function applyStyles() {
+  const $nav = $('#roundednav');
+  const windowWidth = window.innerWidth; // Largeur actuelle de la fenêtre
+  const scrollTop = window.scrollY; // Position actuelle du défilement
+
+  if (windowWidth <= 1024) {
+    if (scrollTop > 0) {
+      $nav.css({
+        'margin': '0 0 0 20px', // Supprime complètement la marge
+        'transition': 'margin 0.2s ease', // Transition fluide
+      });
+    } else {
+      $nav.css({
+        'margin': '0 0 0 0', // Supprime également toute marge lorsque la page est tout en haut
+        'transition': 'margin 0.2s ease',
+      });
+    }
+  } else {
+    // Réinitialise les marges sur les écrans plus larges (au-dessus de 1024px)
+    $nav.css({
+      'margin': 'auto',
+    });
+  }
+}
+
+// Ajoute les gestionnaires d'événements pour scroll et resize
+$(window).on('scroll', applyStyles);
+$(window).on('resize', applyStyles);
+
+// Appelle la fonction au chargement de la page
+$(document).ready(applyStyles);
+
+
 function updateNavbarOnScroll() {
   window.onscroll = function() {scrollFunction()};
 
