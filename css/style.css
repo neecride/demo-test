@@ -1,5 +1,11 @@
 /* Create a sticky/fixed navbar */
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #111111;
 }
@@ -23,6 +29,7 @@ body{
     position: fixed;
     left: 70px;
     z-index: 100;
+    font-weight: bold;
 }
 
 #logo{
@@ -248,8 +255,7 @@ body{
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 14px;
     padding: 15px;
     color: #fff;
@@ -483,35 +489,31 @@ p{
 .splash h1{
     color: #fff;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .splash p{
     color: #fff;
 }
 
-.line{
-    border-radius: 50px;
+.foot{
+    border-radius: 5px;
     padding: 0.2em 0.2em 0.2em 0.2em;
-    margin-bottom: 1.5rem;
     overflow: hidden;
     background-image: url('../img/module_metal.png');
 }
 
-.line span{
+.foot span{
     color: #fff;
 }
 
-.line span a{
+.foot span a{
     color: #912c1a;
 }
 
 .copyright{
     padding: 10px;
-    border-top-left-radius:25px;
-    border-bottom-left-radius:25px;
-    border-top-right-radius:5px;
-    border-bottom-right-radius:5px;
+    border-radius:3px;
     background-image: url('../img/module_metal.png');
     background-color: #2980b9;
 }
@@ -529,7 +531,7 @@ p{
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         right: 25px;
-        margin:0 0 0 20px;
+        margin:0 0 0 0px;
     }
 
     #glossy{
