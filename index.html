@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end" data-bs-theme="dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <form action="">
@@ -28,23 +28,25 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                <button class="access-button">Submit</button>
+                <button class="btn btn-success">Submit</button>
             </form>
         </div>
     </div>
-    <div class="container-highlight">
-        <div class="wide"></div>        
+    <div class="container-highlight">       
           <div class="btn-queries">
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         <div class="splash">
-          <h1>Splash</h1>
+          <h1>Discord</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae aperiam fugiat, perferendis dignissimos quasi? Sequi omnis illo consequatur distinctio quo itaque cum, aliquam nihil numquam ratione, repellendus temporibus corrupti.</p>
-          <button type="button" class="btn btn-success" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            Custom button
-          </button>
+          <div class="banner-buttons">
+                <a href="" target="_blank" class="navlink hover _2 w-inline-block">
+                <p class="navlinktext"><span class="navlinktextone b">Join discord</span></p>
+                  <img src="https://cdn.prod.website-files.com/64dc08acd67915748af1f8a7/65f62ea07c10349f2d0a9914_Discord%20-%20Original.svg" loading="lazy" alt="" class="image-40">
+                </a>
+          </div>
         </div>
     </div>
     <div id="boxnavbar">
