@@ -794,7 +794,7 @@ p{
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    background: var(--bg-color);
+    background: transparent;
     margin-bottom: 10px;
   }
   
@@ -813,7 +813,7 @@ p{
     position: absolute;
     width: 114px;
     height: 114px;
-    background: var(--bg-color);
+    background: #212529;
     border-radius: 100%;
     display: flex;
     justify-content: center;
