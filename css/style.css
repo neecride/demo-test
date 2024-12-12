@@ -494,96 +494,6 @@ p{
     display: flex;
 }
 
-.navlink.hover {
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    background-color: #fff;
-    border-radius: 50px;
-    min-width: 183px;
-    margin-right: 0;
-    padding: 16px 26px;
-}
-
-.navlink {
-    text-align: center;
-    -webkit-text-fill-color: inherit;
-    background-clip: border-box;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    text-decoration: none;
-    transition: opacity .4s;
-}
-
-.navlink.hover._2 {
-    box-shadow: none;
-    display: flex;
-}
-
-.navlink._2 {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-
-.navlinktext {
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 15px;
-    text-decoration: none;
-    display: flex;
-}
-
-.navlinktextone.b {
-    color: #000;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #523fd7, #ff7dff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 15px;
-}
-
-.navlinktextone {
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.image-40 {
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-}
-
-.navlink img {
-    transition: transform 0.3s ease; /* Transition fluide pour le zoom */
-}
-
-.navlink:hover img {
-    transform: scale(1.1); /* Zoom à 110% */
-}
-
-.navlinktext {
-    color: #fff;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 15px;
-    text-decoration: none;
-    display: flex;
-}
-
-.navlink:hover {
-    opacity: .66;
-    font-family: Poppins, sans-serif;
-}
-
 .styled-button {
     position: relative;
     padding: 0.5rem 1rem;
@@ -599,29 +509,16 @@ p{
     align-items: center;
     justify-content: center;
     border: 1px solid #292929;
+    text-decoration: none; /* Retire le soulignement des liens */
 }
-  
-.styled-button::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    background: linear-gradient(to bottom, #292929, #000000);
-    z-index: -1;
-    border-radius: 9999px;
-    transition: all 0.2s ease;
-    opacity: 1;
+
+.styled-button:hover .inner-button .icon {
+    transform: rotate(-35deg); /* Rotation de l'icône */
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
 }
-  
-.styled-button:active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 0.4);
-}
-  
+
 .styled-button .inner-button {
-    position: relative; /* Ensure relative positioning for pseudo-element */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -634,20 +531,6 @@ p{
     border: 1px solid #252525;
     transition: all 0.2s ease;
 }
-  
-.styled-button .inner-button::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    right: -1px;
-    bottom: -1px;
-    left: -1px;
-    background: linear-gradient(to bottom, #292929, #000000);
-    z-index: -1;
-    border-radius: 9999px;
-    transition: all 0.2s ease;
-    opacity: 1;
-}
 
 .styled-button .inner-button .icon {
     filter: drop-shadow(0 10px 20px rgba(26, 25, 25, 0.9))
@@ -655,11 +538,6 @@ p{
     transition: all 0.4s ease-in-out;
 }
 
-.styled-button .inner-button .icon:hover {
-    filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
-        drop-shadow(0 0 20px rgba(2, 2, 2, 1));
-    transform: rotate(-35deg);
-}
 
 
 /* From Uiverse.io by vinodjangid07 */ 
@@ -730,6 +608,12 @@ p{
     transform: translate(2px ,2px);
 }
 
+/* badge */
+.text-bg-primary {
+    color: #fff !important;
+    background-color: #222222 !important;
+}
+
 /*********/
 
 .offcanvas-banners-btn{
@@ -739,6 +623,9 @@ p{
     align-items: center;
     width: 100%;
     display: flex;
+    border: 1px solid #424649;
+    padding: 10px 0 10px 0px;
+    border-radius: 5px;
 }
 
 .Btn-submit {
@@ -780,6 +667,45 @@ p{
     transform: translate(2px ,2px);
 }
 
+/*** btn account ***/
+.Btn-account {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(0, 134, 67);
+}
+  /* hover effect on button width */
+.Btn-account:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+  
+.Btn-account:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn-account:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+  /* button click effect*/
+.Btn-account:active {
+    transform: translate(2px ,2px);
+}
 
 /* From Uiverse.io by andrew-demchenk0 */ 
 .card {
@@ -796,7 +722,7 @@ p{
     border-radius: 5px;
     background: transparent;
     margin-bottom: 10px;
-  }
+}
   
 .card__img {
     height: 192px;
@@ -809,7 +735,7 @@ p{
     border-radius: 5px;
 }
   
-  .card__avatar {
+.card__avatar {
     position: absolute;
     width: 114px;
     height: 114px;
@@ -819,29 +745,29 @@ p{
     justify-content: center;
     align-items: center;
     top: calc(50% - 57px);
-  }
+}
   
-  .card__avatar img {
+.card__avatar img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  }
+}
   
-  .card__title {
+.card__title {
     margin-top: 60px;
     font-weight: 500;
     font-size: 18px;
     color: var(--main-color);
-  }
+}
   
-  .card__subtitle {
+.card__subtitle {
     margin-top: 10px;
     font-weight: 400;
     font-size: 15px;
     color: var(--submain-color);
-  }
+}
   
-  .card__btn {
+.card__btn {
     margin-top: 15px;
     width: 76px;
     height: 31px;
@@ -853,22 +779,22 @@ p{
     background: var(--bg-color);
     text-transform: uppercase;
     transition: all 0.3s;
-  }
+}
   
-  .card__btn-solid {
+.card__btn-solid {
     background: var(--main-color);
     color: var(--bg-color);
-  }
+}
   
-  .card__btn:hover {
+.card__btn:hover {
     background: var(--main-color);
     color: var(--bg-color);
-  }
+}
   
-  .card__btn-solid:hover {
+.card__btn-solid:hover {
     background: var(--bg-color);
     color: var(--main-color);
-  }
+}
 
 /**************/
 /* SPLASHTEXT */
