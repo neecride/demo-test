@@ -22,6 +22,17 @@ body{
     display: flex;
 }
 
+.fa-i i{
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
+}
+
+.fa-i:hover i{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
+}
+
 /* Styles pour le menu déroulant */
 .hover-nav-dropdown {
     display: none; /* Masquer le sous-menu par défaut */
@@ -148,7 +159,7 @@ body{
 .socials {
     position: absolute;
     right: 5%;
-    top: 590px;
+    top: 715px;
     z-index: 1000;
     border-radius: 50px;
     padding: 0.2em 1em 0.2em 1em;
@@ -328,9 +339,108 @@ button.close-alert-box {
 /*** FLOATINGBOX **/
 /******************/
 
+#boxes {
+    width: auto;
+    height: 200px;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 1px 3px;
+}
+
+.box-1{
+    background-color: #ec7437;
+    width: 343px;
+    height: 100%;
+    border-top-left-radius: 10px;
+}
+
+.box-2{
+    background-color: #fff;
+    width: 343px;
+    height: 100%;
+}
+
+.box-3{
+    background-color: #ec7437;
+    width: 343px;
+    height: 100%;
+    border-top-right-radius: 10px;
+}
+
+.box-1 p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.box-2 p{
+    color: #625765;
+    font-size: 12px;
+    text-align: center;
+}
+
+.box-3 p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box-1 h5{
+    color: #fff;
+    text-align: center;
+    height:70px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-2 h5{
+    color: #625765;
+    text-align: center;
+    height:70px;
+    padding-top: 10px;
+}
+
+.box-3 h5{
+    color: #fff;
+    text-align: center;
+    height:70px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-1 img{
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -56%;
+    z-index: 0;
+    opacity: 0.5;
+    border-top-left-radius: 10px;
+}
+
+.box-3 img{
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -56%;
+    z-index: 0;
+    opacity: 0.5;
+    border-top-right-radius: 10px;
+}
+
 .floating-box {
     position: absolute; /* Position par défaut (sera changée par jQuery) */
-    top: 590px; /* Point initial */
+    top: 715px; /* Point initial */
     left: 5%; /* Toujours à gauche de la page */
     z-index: 10;
     width: 15%;
@@ -467,14 +577,40 @@ p{
 
 .container-highlight{
     background-image: linear-gradient(to bottom, transparent, #111111);
-    display: flex;
-    height: 60vh;
     justify-content: center;
-    margin-bottom: 10px;
-    max-height: 620px;
-    min-height: 550px;
-    position: relative;
+    height: 670px;
     background-color: #303030;
+    display: flex;
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    opacity: 0.2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset;
+}
+
+#line {
+    width: 100%;
+    border-bottom: 5px solid #ec7437;
+    transition: top 0.3s ease, bottom 0.3s ease;
+}
+
+.sticky-line {
+    position: fixed;
+    top: 55px; /* Fixée sous #boxnavbar */
+    bottom: auto; /* Désactive le bottom */
+    z-index: 90;
+}
+
+.reset-line {
+    position: absolute;
+    bottom: 0;
 }
 
 .btn-queries{
@@ -584,7 +720,8 @@ p{
     font-weight: 600;
     transition-duration: .3s;
 }
-  /* hover effect on button width */
+
+/* hover effect on button width */
 .Btn:hover {
     width: 125px;
     border-radius: 40px;
@@ -715,7 +852,7 @@ p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     width: 100%;
-    height: 384px;
+    height: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -885,11 +1022,19 @@ p{
         padding: 10px;
     }
 
+    .cover {
+        background-position: 30%;
+    }
+
     .header-left{
         display: none;
     }
 
     .header-right{
+        display: none;
+    }
+
+    #boxes {
         display: none;
     }
 
