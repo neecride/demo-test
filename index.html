@@ -51,6 +51,7 @@
             <h1>Login</h1>            
             <div class="card">
                 <div class="card__img">
+                  <!-- https://neecride.github.io/demo-test/img/ -->
                   <img src="https://neecride.github.io/demo-test/img/default.png" alt="bgsite">
                 </div>
                 <div class="card__avatar">
@@ -66,11 +67,23 @@
             <div class="offcanvas-banners-btn">
               <button class="Btn">
                 <div class="sign">
-                <svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg>
+                <svg viewBox="0 0 512 512">
+                  <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                </svg>
                 </div>
                 <div class="text">Logout</div>
               </button>
+              <button class="Btn-account">
+                <div class="sign">
+                  <svg enable-background="new 0 0 12 12" version="1.1" viewBox="0 0 12 12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M9.3005371,6.5351563C8.4776001,7.4294434,7.3084106,8,6,8S3.5223999,7.4294434,2.6994629,6.5351563   C1.3145142,7.2350464,0.5,8.6131592,0.5,10.5V12h11v-1.5C11.5,8.6131592,10.6854858,7.2350464,9.3005371,6.5351563z" fill="#1D1D1B"/>
+                      <circle cx="6" cy="3.5" fill="#fff" r="3.5"/>
+                  </svg>
+                </div>
+                <div class="text">Account</div>
+              </button>
             </div>
+          </div>
         </div>
     </div>
     <div class="container-highlight">       
@@ -83,11 +96,18 @@
           <h1>Discord</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae aperiam fugiat, perferendis dignissimos quasi? Sequi omnis illo consequatur distinctio quo itaque cum, aliquam nihil numquam ratione, repellendus temporibus corrupti.</p>
           <div class="banner-buttons">
-                <a href="" target="_blank" class="navlink hover _2 w-inline-block">
-                <p class="navlinktext"><span class="navlinktextone b">Join discord</span></p>
-                  <img src="https://cdn.prod.website-files.com/64dc08acd67915748af1f8a7/65f62ea07c10349f2d0a9914_Discord%20-%20Original.svg" loading="lazy" alt="" class="image-40">
+                <a href="your-link-here" class="styled-button">
+                  Join Discord
+                  <div class="inner-button">
+                    <img
+                    src="https://cdn.prod.website-files.com/64dc08acd67915748af1f8a7/65f62ea07c10349f2d0a9914_Discord%20-%20Original.svg"
+                    loading="lazy"
+                    alt="Discord Icon"
+                    class="icon"
+                    >
+                  </div>
                 </a>
-                <button class="styled-button">
+                <button class="styled-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                   Register
                   <div class="inner-button">
                     <svg
@@ -110,7 +130,7 @@
                       ></path>
                     </svg>
                   </div>
-                </button>
+                </button>                
           </div>
 
         </div>
@@ -177,7 +197,6 @@
             </div>
           </div>
         </div>
-
         <div class="alert-box alert-black">
           <div class="alert-box-content" style="padding: 0;">
             <ol class="list-group list-group-numbered ">
