@@ -11,7 +11,6 @@ body{
 }
 
 #boxnavbar {
-    overflow: hidden;
     padding: 30px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
@@ -21,6 +20,50 @@ body{
     transition: all .2s;
     align-items: center;
     display: flex;
+}
+
+/* Styles pour le menu déroulant */
+.hover-nav-dropdown {
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    z-index: 1000;
+}
+
+.hover-nav{
+    background-color: #444;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 3px;
+    margin: 15px 0px 0 0px;
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+}
+
+.hover-nav li {
+    text-decoration: none;
+    display: inline;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+}
+
+.hover-nav li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background: aliceblue;
+    border-radius: 3px;
+}
+
+/* Afficher le menu déroulant au survol */
+.nav-item:hover .hover-nav-dropdown {
+    display: block;
 }
 
 .header-left{
@@ -423,7 +466,7 @@ p{
 }
 
 .container-highlight{
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(to bottom, transparent, #111111);
     display: flex;
     height: 60vh;
     justify-content: center;
@@ -431,7 +474,7 @@ p{
     max-height: 620px;
     min-height: 550px;
     position: relative;
-    background-color: #212121;
+    background-color: #303030;
 }
 
 .btn-queries{
@@ -526,7 +569,6 @@ p{
     transform: scale(1.1); /* Zoom à 110% */
 }
 
-
 .navlinktext {
     color: #fff;
     flex-direction: column;
@@ -541,6 +583,292 @@ p{
     opacity: .66;
     font-family: Poppins, sans-serif;
 }
+
+.styled-button {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #171717, #242424);
+    border-radius: 9999px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #292929;
+}
+  
+.styled-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to bottom, #292929, #000000);
+    z-index: -1;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+  
+.styled-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1), 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+  
+.styled-button .inner-button {
+    position: relative; /* Ensure relative positioning for pseudo-element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #171717, #242424);
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    border: 1px solid #252525;
+    transition: all 0.2s ease;
+}
+  
+.styled-button .inner-button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to bottom, #292929, #000000);
+    z-index: -1;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+.styled-button .inner-button .icon {
+    filter: drop-shadow(0 10px 20px rgba(26, 25, 25, 0.9))
+        drop-shadow(0 0 4px rgba(0, 0, 0, 1));
+    transition: all 0.4s ease-in-out;
+}
+
+.styled-button .inner-button .icon:hover {
+    filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
+        drop-shadow(0 0 20px rgba(2, 2, 2, 1));
+    transform: rotate(-35deg);
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(255, 65, 65);
+}
+  
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.sign svg {
+    width: 17px;
+}
+  
+.sign svg path {
+    fill: white;
+}
+  /* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+  /* hover effect on button width */
+.Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+  
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+  /* button click effect*/
+.Btn:active {
+    transform: translate(2px ,2px);
+}
+
+/*********/
+
+.offcanvas-banners-btn{
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.Btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(65, 125, 255);
+}
+  /* hover effect on button width */
+.Btn-submit:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+  
+.Btn-submit:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn-submit:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+  /* button click effect*/
+.Btn-submit:active {
+    transform: translate(2px ,2px);
+}
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--bg-color);
+    margin-bottom: 10px;
+  }
+  
+.card__img {
+    height: 192px;
+    width: 100%;
+}
+
+.card__img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+  
+  .card__avatar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc(50% - 57px);
+  }
+  
+  .card__avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .card__title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-color);
+  }
+  
+  .card__subtitle {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--submain-color);
+  }
+  
+  .card__btn {
+    margin-top: 15px;
+    width: 76px;
+    height: 31px;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--main-color);
+    background: var(--bg-color);
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  
+  .card__btn-solid {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn-solid:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+  }
 
 /**************/
 /* SPLASHTEXT */
