@@ -22,11 +22,42 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+            <h1>Login</h1>            
+            <div class="card">
+                <div class="card__img">
+                  <!-- https://neecride.github.io/demo-test/img/ -->
+                  <img src="https://neecride.github.io/demo-test/img/default.png" alt="bgsite">
+                </div>
+                <div class="card__avatar">
+                  <img src="https://neecride.github.io/demo-test/img/avav.png" alt="ava">
+                </div>
+                <div class="card__title">neecride</div>
+                <div class="card__subtitle">Web Development</div>
+            </div>
+            <div class="offcanvas-banners-btn">
+              <button class="Btn">
+                <div class="sign">
+                <svg viewBox="0 0 512 512">
+                  <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                </svg>
+                </div>
+                <div class="text">Logout</div>
+              </button>
+              <button class="Btn-account">
+                <div class="sign">
+                  <svg enable-background="new 0 0 12 12" version="1.1" viewBox="0 0 12 12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path d="M9.3005371,6.5351563C8.4776001,7.4294434,7.3084106,8,6,8S3.5223999,7.4294434,2.6994629,6.5351563   C1.3145142,7.2350464,0.5,8.6131592,0.5,10.5V12h11v-1.5C11.5,8.6131592,10.6854858,7.2350464,9.3005371,6.5351563z" fill="#1D1D1B"/>
+                      <circle cx="6" cy="3.5" fill="#fff" r="3.5"/>
+                  </svg>
+                </div>
+                <div class="text">Account</div>
+              </button>
+            </div>
             <form action="">
-              <h1>Not login</h1>
+              <h1>Login</h1>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="username or email" aria-label="username" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
@@ -48,50 +79,45 @@
                 </button>
             </form>
 
-            <h1>Login</h1>            
-            <div class="card">
-                <div class="card__img">
-                  <!-- https://neecride.github.io/demo-test/img/ -->
-                  <img src="https://neecride.github.io/demo-test/img/default.png" alt="bgsite">
+            <form action="">
+              <h1>Register</h1>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1">
                 </div>
-                <div class="card__avatar">
-                  <img src="https://neecride.github.io/demo-test/img/avav.png" alt="ava">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
+                </div>              
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="password" aria-label="password-2" aria-describedby="basic-addon1">
                 </div>
-                <div class="card__title">neecride</div>
-                <div class="card__subtitle">Web Development</div>
-                <div class="card__wrapper">
-                    <button class="card__btn">Button</button>
-                    <button class="card__btn card__btn-solid">Button</button>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="password repeat" aria-label="password-2" aria-describedby="basic-addon1">
                 </div>
-            </div>
-            <div class="offcanvas-banners-btn">
-              <button class="Btn">
-                <div class="sign">
-                <svg viewBox="0 0 512 512">
-                  <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
-                </svg>
-                </div>
-                <div class="text">Logout</div>
-              </button>
-              <button class="Btn-account">
-                <div class="sign">
-                  <svg enable-background="new 0 0 12 12" version="1.1" viewBox="0 0 12 12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <path d="M9.3005371,6.5351563C8.4776001,7.4294434,7.3084106,8,6,8S3.5223999,7.4294434,2.6994629,6.5351563   C1.3145142,7.2350464,0.5,8.6131592,0.5,10.5V12h11v-1.5C11.5,8.6131592,10.6854858,7.2350464,9.3005371,6.5351563z" fill="#1D1D1B"/>
-                      <circle cx="6" cy="3.5" fill="#fff" r="3.5"/>
-                  </svg>
-                </div>
-                <div class="text">Account</div>
-              </button>
-            </div>
+                <button class="Btn-submit">
+                  <div class="sign">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+                     <polygon style="fill:#fff;" points="12.5,10 12.5,13 2.5,13 2.5,10 0.5,10 0.5,13 0.5,15 14.5,15 14.5,13 14.5,10 		"/>
+                     <polygon style="fill:#fff;" points="11.5,7 9.5,7 9.5,0 5.5,0 5.5,7 3.5,7 7.5,12 		"/>
+                 </svg>
+                  </div>
+                  <div class="text">Submit</div>
+                </button>
+            </form>
           </div>
         </div>
     </div>
-    <div class="container-highlight">       
-          <div class="btn-queries">
-            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
+    <div class="container-highlight">
+        <div class="cover"></div>       
+        <div class="btn-queries">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
         <div class="splash">
           <h1>Discord</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae aperiam fugiat, perferendis dignissimos quasi? Sequi omnis illo consequatur distinctio quo itaque cum, aliquam nihil numquam ratione, repellendus temporibus corrupti.</p>
@@ -99,12 +125,8 @@
                 <a href="your-link-here" class="styled-button">
                   Join Discord
                   <div class="inner-button">
-                    <img
-                    src="https://cdn.prod.website-files.com/64dc08acd67915748af1f8a7/65f62ea07c10349f2d0a9914_Discord%20-%20Original.svg"
-                    loading="lazy"
-                    alt="Discord Icon"
-                    class="icon"
-                    >
+                    <!-- https://neecride.github.io/demo-test/img/ -->
+                    <img src="https://neecride.github.io/demo-test/img/discord.svg" alt=""loading="lazy" alt="Discord Icon" class="icon">
                   </div>
                 </a>
                 <button class="styled-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -132,9 +154,25 @@
                   </div>
                 </button>                
           </div>
-
+        </div>
+        <div id="boxes">
+          <div class="box-1">
+            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="https://neecride.github.io/demo-test/img/roster-1.png" alt="">
+          </div>
+          <div class="box-2">
+            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+          <div class="box-3">
+            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <img src="https://neecride.github.io/demo-test/img/roster-1.png" alt="">
+          </div>
         </div>
     </div>
+    <div id="line"></div>
     <div id="boxnavbar">
         <div class="container-fluid">
             <div class="header-left">
@@ -162,7 +200,7 @@
                     <nav class="navbar navbar-expand">
                       <ul class="navbar-nav p-0">
                             <li class="nav-item access">
-                                <a id="homenav" class="nav-link text-light active" href="#"><i class="fas fa-home"></i> Home</a>
+                                <a id="homenav" class="nav-link fa-i text-light active" href="#"><i class="fas fa-home"></i> Home</a>
                                   <!--<div class="hover-nav-dropdown">
                                     <ul class="hover-nav">
                                       <li><a href="#">autre</a></li>
@@ -173,10 +211,10 @@
                                   </div>-->
                             </li>
                             <li class="nav-item access">
-                                <a id="forumnav" class="nav-link text-light" href="#"><i class="fas fa-comments"></i> Forum</a>
+                                <a id="forumnav" class="nav-link fa-i text-light" href="#"><i class="fas fa-comments"></i> Forum</a>
                             </li>
                             <li class="nav-item access">
-                                <a id="forumnav" class="nav-link text-light" href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
+                                <a id="forumnav" class="nav-link fa-i text-light" href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -467,6 +505,27 @@
             // Vérifie la position dès le chargement de la page
             adjustBoxPosition();
         });
+    </script>
+    <script>
+      $(document).ready(function () {
+          const $line = $('#line');
+          const $navbar = $('#boxnavbar');
+
+          const lineInitialOffset = $line.offset().top; // Position initiale de la ligne
+          const navbarHeight = $navbar.outerHeight();  // Hauteur du menu fixe
+
+          $(window).on('scroll', function () {
+              const scrollTop = $(window).scrollTop();
+
+              if (scrollTop + navbarHeight >= lineInitialOffset) {
+                  // Ajoute la classe sticky-line quand #line touche #boxnavbar
+                  $line.addClass('sticky-line');
+              } else {
+                  // Supprime la classe sticky-line si on remonte
+                  $line.removeClass('sticky-line');
+              }
+          });
+      });
     </script>
 </body>
 </html>
