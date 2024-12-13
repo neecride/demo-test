@@ -409,6 +409,11 @@ button.close-alert-box {
 .floating-render h4{
     font-weight: bold;
     color: #b3b3b3;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #625765;
+    padding: 0 0 10px 0px;
 }
 
 .sticky {
@@ -434,27 +439,16 @@ button.close-alert-box {
 }
 
 .content-render{
-    position: relative;
     background: linear-gradient(to bottom, #171717, #242424);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease;
-    justify-content: center;
     border: 1px solid #292929;
     margin-bottom: 1.5rem;
 }
 
 .box-render{
     padding: 1rem;
-}
-
-.pinned-span{
-    position: absolute;
-    top: 20px;
-    right: 58px;
-    font-size: 12px;
-    display: inline-block;
-    color: #999999;
 }
 
 .box-render .inner-button{
@@ -465,15 +459,14 @@ button.close-alert-box {
     background: linear-gradient(to bottom, #171717, #242424);
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     border-radius: 50%;
     box-shadow: 0 0 1px rgba(0, 0, 0, 1);
     border: 1px solid #252525;
-    transition: all 0.2s ease;
-    right: 10px;
-    top: 10px;
+    right: 5px;
+    top: 6px;
     cursor: pointer;
     transition: transform 0.4s ease-in-out; /* Animation fluide */
+    z-index: 2;
 }
 
 .box-render .inner-button:hover {
@@ -484,15 +477,51 @@ button.close-alert-box {
 .box-render p{
     margin: 0;
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #999999;
 }
 
 .box-render h1{
+    position: relative;
     font-weight: bold;
     color: #b3b3b3;
-    margin: 0 0 1rem 0px;
+    margin: 0px 0px 1rem 0px;
+    background: linear-gradient(to bottom, #ec7437, #ad3d05);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    padding: 0px 150px 5px 10px;
+    height: 53px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.box-render h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: #1d1d1d;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    border: 1px solid #252525;
+    border-radius: 50%;
+    z-index: 1;
+    width: 53px;
+    right: -1px;
+    height: 100%;
+}
+
+.box-render h4{
+    font-weight: bold;
+    color: #b3b3b3;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #625765;
+    padding: 0 0 10px 0px;
 }
 
 p{
