@@ -34,47 +34,80 @@ body{
 }
 
 /* Styles pour le menu déroulant */
-.hover-nav-dropdown {
-    display: none; /* Masquer le sous-menu par défaut */
+.button-submenu{
+    background: linear-gradient(to bottom, #171717, #242424);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    border: 1px solid #292929;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.nav-item-li{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0px 0 5px 0px;
+}
+
+.nav-item-li span{
+    margin-left: 10px;
+    margin-right: 9px;
+}
+
+.nav-item .submenu {
     position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    left: 0;
     top: 100%;
-    left: -10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 100%;
+    transform: translateY(-20px);
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 10px 10px 10px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
     z-index: 1000;
 }
 
-.hover-nav{
-    background-color: #444;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px 3px;
-    margin: 15px 0px 0 0px;
-    list-style: none;
-    padding: 0;
-    border-radius: 5px;
+.nav-item.open .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.nav-item .submenu li {
+    list-style: none; /* Supprimer les puces */
+}
+
+.nav-item .submenu li a {
     display: flex;
-}
-
-.hover-nav li {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Fixer une hauteur pour éviter les sauts */
+    width: 90%; /* Largeur constante */
+    margin: 0 auto; /* Centrer dans la grille */
+    padding: 10px; /* Ne pas changer au hover */
+    color: #979797;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
     text-decoration: none;
-    display: inline;
-    width: 100%;
-    padding: 5px 5px 5px 5px;
+    border: 1px solid transparent; /* Fixer la bordure à l'état initial */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.hover-nav li a {
-    color: #000;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-    background: aliceblue;
-    border-radius: 3px;
-}
-
-/* Afficher le menu déroulant au survol */
-.nav-item:hover .hover-nav-dropdown {
-    display: block;
+.nav-item .submenu li a:hover {
+    background-color: transparent;
+    border-color: #979797;
+    color: #979797;
 }
 
 .header-left{
@@ -112,14 +145,14 @@ body{
     align-items: center;
     border-radius: 100px;
     display: flex;
-    padding: 0 5px 0 5px;
+    padding: 0px 5px 5px 0px;
 }
 
-.access:hover {
+/*.access:hover {
     backdrop-filter: saturate(150%);
     -webkit-backdrop-filter: saturate(150%);
     background-color: hsla(0,0%,100%,.15);
-}
+}*/
 
 #roundednav{
     border-radius: 50px;
@@ -164,9 +197,6 @@ body{
     padding: 0.2em 1em 0.2em 1em;
     margin-bottom: unset;
     border-radius: 50px;
-    border: 1px solid #292929;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(to bottom, #171717, #242424);
 }
 
 .socials ul{
@@ -432,10 +462,7 @@ button.close-alert-box {
 
 .floating-box {
     position: absolute; /* Position par défaut (sera changée par jQuery) */
-    background: linear-gradient(to bottom, #171717, #242424);
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #292929;
     margin-bottom: 1.5rem;
     top: 715px;
     left: 5%;
@@ -488,12 +515,21 @@ button.close-alert-box {
 }
 
 .content-render{
-    background: linear-gradient(to bottom, #171717, #242424);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease;
-    border: 1px solid #292929;
     margin-bottom: 1.5rem;
+}
+
+.content-render-background-1{
+    background: linear-gradient(to bottom, #171717, #242424) border-box;
+    border: 1px solid #292929;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.content-render-background-2{
+    background: linear-gradient(#171717, #242424) padding-box, linear-gradient(180deg, transparent 35%,#eb7337, #242424) border-box;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .box-render{
