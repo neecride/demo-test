@@ -306,7 +306,9 @@ button.close-alert-box {
 #boxes {
     width: auto;
     height: 200px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     bottom: 0;
     position: absolute;
     border-top-left-radius: 10px;
@@ -520,7 +522,7 @@ button.close-alert-box {
 .social-encadre-top h4 {
     margin: 0;
     font-size: 1.2em;
-    color: #333;
+    color: #d04c59;
     font-weight: bold;
 }
 
@@ -565,7 +567,7 @@ button.close-alert-box {
 .social-stat h4 {
     margin: 0;
     font-size: 1.2em;
-    color: #333;
+    color: #d04c59;
     font-weight: bold;
 }
 
@@ -659,6 +661,28 @@ button.close-alert-box {
     margin: 0 auto;
     height: 220px;
     top: 30px;
+}
+
+.box-date{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: -45px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(to right, #ec7437, #d04c59);
+    border: 1px solid #ad3d05;
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+}
+
+.box-date span{
+    color: #999999;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .box-render .inner-button{
@@ -764,7 +788,7 @@ p{
 
 .build{
     width: 55%;
-    margin: 40px auto;
+    margin: 40px auto 10px auto;
 }
 
 .container-highlight{
@@ -1155,6 +1179,77 @@ p{
     font-weight: bold;
     text-align: center;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    gap: 0; /* Pas d'espace entre les colonnes */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #d04c59;
+    font-weight: bold;
+    align-content: baseline;
+    position: relative; /* Nécessaire pour superposition des éléments */
+}
+
+.footer-img {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px; /* Coins arrondis */
+    border: 2px solid #d04c59; /* Bordure rouge */
+    margin-bottom: 10px;
+    position: relative; /* Permet la superposition de l'icône */
+    z-index: 1; /* L'image est derrière l'icône */
+    width: 60px; /* Taille fixe de l'image */
+    height: 60px;
+}
+
+.flag-mail {
+    position: absolute;
+    top: 50%; /* Centre verticalement par rapport au parent h4 */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fff;
+    padding: 5px 5px 5px 5px;
+    border-radius: 35%;
+    line-height: 0;
+    border: 2px solid #d04c59;
+}
+
+.flag-mail i {
+    color: #d04c59; /* Couleur de l'icône */
+}
+
+.footer a {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+.footer span {
+    display: block;
+    font-size: 0.6em; /* Taille réduite du texte */
+    color: #666;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.footer h4 span i {
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+    font-size: 1em;
+    color: #666;
+}
+
 
 .copyright{
     color: #999999;
