@@ -22,39 +22,34 @@ body{
     display: flex;
 }
 
+.fa-i{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
+}
+
+.fa-i:hover{
+    color: #cacaca;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
+}
+
 .fa-i i{
+    color: #fff;
     transition: transform 0.4s ease-in-out; /* Animation fluide */
 }
 
 .fa-i:hover i{
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
-    transition: transform 0.4s ease-in-out; /* Animation fluide */
+    color: #cacaca;
+    transition: transform 0.4s ease-in-out; 
 }
 
 /* Styles pour le menu déroulant */
 .button-submenu{
-    background: linear-gradient(to bottom, #171717, #242424);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 100%;
-    border: 1px solid #292929;
-    text-align: center;
-    padding: 5px 10px 5px 10px;
     cursor: pointer;
-}
-
-.nav-item-li{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    color: #fff;
-    padding: 0px 0 5px 0px;
-}
-
-.nav-item-li span{
-    margin-left: 10px;
-    margin-right: 9px;
+    text-decoration: none;
 }
 
 .nav-item .submenu {
@@ -114,7 +109,7 @@ body{
     color: #fff;
     padding: 10px 30px;
     position: fixed;
-    left: 70px;
+    left: 0px;
     z-index: 100;
     font-weight: bold;
 }
@@ -129,7 +124,7 @@ body{
     color: #fff;
     padding: 16px 30px;
     position: fixed;
-    right: 70px;
+    right: 0px;
     z-index: 100;
 }
 
@@ -314,12 +309,14 @@ button.close-alert-box {
     display: flex;
     bottom: 0;
     position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px -3px 1px 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #d04c59;
 }
 
 .box-1{
     position: relative;
-    background-color: #ec7437;
+    background-color: #d04c59;
     width: 343px;
     height: 100%;
     border-top-left-radius: 10px;
@@ -334,7 +331,7 @@ button.close-alert-box {
 
 .box-3{
     position: relative;
-    background-color: #ec7437;
+    background-color: #d04c59;
     width: 343px;
     height: 100%;
     border-top-right-radius: 10px;
@@ -393,7 +390,7 @@ button.close-alert-box {
     width: 100%;
     top: 0%;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.5;
     border-top-left-radius: 10px;
     position: absolute;
 }
@@ -403,8 +400,8 @@ button.close-alert-box {
     width: 100%;
     top: 0%;
     z-index: 0;
-    opacity: 0.3;
-    border-top-left-radius: 10px;
+    opacity: 0.5;
+    border-top-right-radius: 10px;
     position: absolute;
 }
 
@@ -430,7 +427,7 @@ button.close-alert-box {
     position: absolute;
     bottom: 30px;
     left: 152px;
-    border: 1px solid #f78167;
+    border: 1px solid #d04c59;
     border-radius: 50%;
 }
 
@@ -462,27 +459,19 @@ button.close-alert-box {
 
 .floating-box {
     position: absolute; /* Position par défaut (sera changée par jQuery) */
-    border-radius: 15px;
-    margin-bottom: 1.5rem;
     top: 715px;
     left: 5%;
     z-index: 10;
     width: 15%;
 }
 
-.floating-render{
+.floating-content-render{
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
     padding: 1rem 1rem 1rem 1rem;
 }
 
-.floating-render p{
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #999999;
-}
-
-.floating-render h4{
+.floating-content-render h4 {
     font-weight: bold;
     color: #b3b3b3;
     font-size: 20px;
@@ -491,6 +480,108 @@ button.close-alert-box {
     border-bottom: 1px solid #625765;
     padding: 0 0 10px 0px;
 }
+
+.floating-content-render p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #999999;
+}
+
+/* Social Encadre Top */
+.social-encadre{
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.social-encadre-top {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 20px 20px 0px 20px;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column; /* Empiler les éléments verticalement */
+    justify-content: flex-start; /* Alignement vertical au début */
+}
+
+.social-encadre-top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%; /* Rendre l'image ronde */
+    border: 1px solid #292929;
+}
+
+.social-encadre-top h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-encadre-top span {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Follow Button */
+.follow-button {
+    margin-top: 0.5em; /* Espacement au-dessus du bouton */
+    background-color: #ec7437; /* Couleur orange */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.follow-button:hover {
+    background-color: #d06532; /* Couleur plus foncée au survol */
+}
+
+/* Social Encadre Bottom */
+.social-encadre-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 0; /* Espace entre les colonnes */
+    margin-top: 1em;
+    border-top: 1px solid #313131;
+}
+
+.social-stat {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.social-stat h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-stat span {
+    display: block;
+    font-size: 0.6em;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Encadre border */
+.encadre-border {
+    border-left: 1px solid #313131;
+    border-right: 1px solid #313131;
+}
+
 
 .sticky {
     position: fixed; /* Change la position pour rester fixée */
@@ -527,7 +618,7 @@ button.close-alert-box {
 }
 
 .content-render-background-2{
-    background: linear-gradient(#171717, #242424) padding-box, linear-gradient(180deg, transparent 35%,#eb7337, #242424) border-box;
+    background: linear-gradient(#171717, #242424) padding-box, linear-gradient(180deg, transparent 35%,#d04c59, #242424) border-box;
     border: 1px solid transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -548,7 +639,7 @@ button.close-alert-box {
     content: '';
     position: absolute;
     bottom: -35px;
-    background: linear-gradient(to bottom, #ec7437, #ad3d05);
+    background: linear-gradient(to bottom, #ec7437, #d04c59);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid #ad3d05;
     width: 100%;
@@ -606,7 +697,7 @@ button.close-alert-box {
     color: #b3b3b3;
     margin: 0px 0px 1rem 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(to bottom, #ec7437, #ad3d05);
+    background: linear-gradient(to bottom, #d04c59, #ad3d05);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 30px;
@@ -647,7 +738,7 @@ button.close-alert-box {
     color: #b3b3b3;
     margin: 0px 0px 1rem 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(to bottom, #ec7437, #ad3d05);
+    background: linear-gradient(to bottom, #d04c59, #ad3d05);
     border-radius: 10px;
     padding: 0px 150px 5px 10px;
     height: 53px;
@@ -698,7 +789,7 @@ p{
 
 #line {
     width: 100%;
-    border-bottom: 5px solid #ec7437;
+    border-bottom: 5px solid #d04c59;
     transition: top 0.3s ease, bottom 0.3s ease;
 }
 
@@ -736,7 +827,7 @@ p{
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #979797;
     background: linear-gradient(to bottom, #171717, #242424);
     border-radius: 9999px;
     cursor: pointer;
@@ -1047,7 +1138,7 @@ p{
 }
 
 .splash h1{
-    background: linear-gradient(to bottom, #fff 55%, #020403);
+    background: linear-gradient(to bottom, #979797 40%, #020403);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1059,8 +1150,9 @@ p{
 }
 
 .splash p{
-    color: #fff;
-    font-family: Poppins, sans-serif;
+    color: #979797;
+    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -1146,17 +1238,8 @@ p{
 
     .floating-box {
         position: unset;
-        background: linear-gradient(to bottom, #171717, #242424);
-        border-radius: 15px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-        transition: all 0.2s ease;
-        border: 1px solid #292929;
-        margin-bottom: 1.5rem;
         width: 100%;
     }
-
-
-
 
     .build {
         width: 100%;
