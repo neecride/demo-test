@@ -41,6 +41,14 @@ function boxNavBar() {
     'top': '10px',
     'transition': '.2s'
   });
+  $('.header-left').css({
+    'left': '0px',
+    'transition': '.2s'
+  });
+  $('.header-right').css({
+    'right': '0px',
+    'transition': '.2s'
+  });
 }
 
 function roundedNav() {
@@ -64,6 +72,14 @@ function roundedNav() {
   });
   $('.btn-queries').css({
     'top': '35px',
+    'transition': '.2s'
+  });
+  $('.header-left').css({
+    'left': '70px',
+    'transition': '.2s'
+  });
+  $('.header-right').css({
+    'right': '70px',
     'transition': '.2s'
   });
 }
