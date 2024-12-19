@@ -46,7 +46,6 @@ body{
     transition: transform 0.4s ease-in-out; 
 }
 
-/* Styles pour le menu déroulant */
 .button-submenu{
     cursor: pointer;
     text-decoration: none;
@@ -136,15 +135,35 @@ body{
     display: inline-block;
 }
 
-.access {
+.active {
     align-items: center;
     border-radius: 100px;
     display: flex;
     padding: 0px 5px 5px 0px;
+    background-color: hsla(0,0%,100%,.15);
 }
 
-.access:hover {
-    background-color: hsla(0,0%,100%,.15);
+.navbar .nav-link {
+    position: relative; 
+}
+
+.navbar .nav-link.show-hover-caret:hover::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #91353e;
+    width: 0;
+    height: 0;
+    z-index: 1;
+}
+
+/* Empêcher les liens des sous-menus d'avoir un caret */
+.navbar .submenu a:hover::before {
+    content: none;
 }
 
 #roundednav{
@@ -497,6 +516,29 @@ button.close-alert-box {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+.content-render-background-3 {
+    background-image: 
+        url(../img/system_bl.png),
+        url(../img/system_br.png), 
+        linear-gradient(#171717, #242424), 
+        linear-gradient(180deg, transparent 35%, #d04c59, #242424); 
+    background-position: 
+        bottom left,
+        bottom right, 
+        center, 
+        center;
+    background-repeat: 
+        no-repeat, 
+        no-repeat,
+        repeat,
+        no-repeat; 
+    background-clip: padding-box; 
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px !important;
+}
+
+
 .box-render{
     padding: 1rem 1rem 0 1rem;
 }
@@ -506,27 +548,28 @@ button.close-alert-box {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
     margin-top: 1em;
-    border: 1px solid #292929;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    min-height: 50px;
+    border-top: 1px solid #292929;
+    padding: 0.5em 1em 0.5em 1em;
 }
 
-/*.box-bottom-left{
-    width: 160px ;
-    height: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #292929;
-    border-bottom-left-radius: 8px;
-}*/
+.box-bottom-left{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #999999;
+    text-align: start;
+}
 
-/*.box-bottom-right{
-    width: 160px;
-    height: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
-    border: 1px solid #292929;
-    border-bottom-right-radius: 8px;
-}*/
+.box-bottom-left a {
+    font-weight: bold;
+    color: #999999;
+}
+
+.box-bottom-right{
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #999999;
+    text-align: end;
+}
 
 .box-img{
     position: relative;
@@ -539,7 +582,7 @@ button.close-alert-box {
 .box-img::before {
     content: '';
     position: absolute;
-    bottom: -35px;
+    top: 0;
     background: linear-gradient(to bottom, #ec7437, #d04c59);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid #ad3d05;
@@ -564,24 +607,22 @@ button.close-alert-box {
 
 .box-date{
     position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: -45px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background: linear-gradient(to right, #ec7437, #d04c59);
-    border: 1px solid #ad3d05;
-    width: 50px;
-    padding: 8px 5px 8px 5px;
+    z-index: 3;
+    bottom: -27px;
+    left: 7px;
+    background-color: #d04c59;
+    border: 1px solid #d04c59;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-grid;
 }
 
 .box-date span{
-    color: #999999;
+    color: #625765;
     font-weight: bold;
-    display: inline-block;
-    width: 100%;
     text-align: center;
     text-transform: uppercase;
+    font-size: 0.7em;
 }
 
 .box-render .inner-button{
@@ -673,7 +714,7 @@ button.close-alert-box {
 
 .box-title span {
     margin-right: 5px;
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     display: grid;
     align-items: center;
@@ -732,17 +773,6 @@ p{
     display: flex;
     position: relative;
 }
-
-/*.cover{
-    position: absolute;
-    background-image: url(../img/1.png);
-    background-size: cover;
-    width: 100%;
-    bottom: 0;
-    height: 100%;
-    opacity: 0.2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset;
-}*/
 
 #line {
     width: 100%;
@@ -1270,10 +1300,10 @@ p{
     position: relative;
     background: #fff;
     border-radius: 50%;
-    margin: 3px;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    margin: 0 2px 0 2px;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
