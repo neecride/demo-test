@@ -8,6 +8,17 @@
 
 body{
     background-color: #111111;
+    color: #999999;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a{
+    color: #999999;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
 }
 
 #boxnavbar {
@@ -46,6 +57,7 @@ body{
     transition: transform 0.4s ease-in-out; 
 }
 
+/* Styles pour le menu déroulant */
 .button-submenu{
     cursor: pointer;
     text-decoration: none;
@@ -144,7 +156,7 @@ body{
 }
 
 .navbar .nav-link {
-    position: relative; 
+    position: relative;
 }
 
 .navbar .nav-link.show-hover-caret:hover::before {
@@ -218,13 +230,11 @@ button.close-alert-box {
     border-left: 1px solid #d04c59;
 }
 
-.base-arrow{
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+.base-arrow {
     justify-content: center;
-    align-items: baseline;
     width: 100%;
     display: flex;
+    gap: 24px; /* Utilisez gap pour les espaces entre les éléments en flexbox */
 }
 
 .box-1{
@@ -368,7 +378,7 @@ button.close-alert-box {
 /******************/
 
 .floating-box {
-    position: absolute; /* Position par défaut (sera changée par jQuery) */
+    position: absolute;
     top: 695px;
     left: 5%;
     z-index: 10;
@@ -416,7 +426,7 @@ button.close-alert-box {
 
 .social-info {
     display: flex;
-    flex-direction: column; /* Empiler les éléments verticalement */
+    flex-direction: column;
     justify-content: flex-start; 
 }
 
@@ -424,7 +434,8 @@ button.close-alert-box {
     width: 60px;
     height: 60px;
     border-radius: 10%;
-    border: 1px solid #292929;
+    border: 2px solid #292929;
+    padding: 3px;
 }
 
 .social-encadre-top h4 {
@@ -518,19 +529,19 @@ button.close-alert-box {
 
 .content-render-background-3 {
     background-image: 
-        url(../img/system_bl.png),
-        url(../img/system_br.png), 
+        url(../img/system_bl.png), 
+        url(../img/system_br.png),
         linear-gradient(#171717, #242424), 
         linear-gradient(180deg, transparent 35%, #d04c59, #242424); 
     background-position: 
-        bottom left,
+        bottom left, 
         bottom right, 
-        center, 
-        center;
+        center,
+        center; 
     background-repeat: 
         no-repeat, 
-        no-repeat,
-        repeat,
+        no-repeat, 
+        repeat, 
         no-repeat; 
     background-clip: padding-box; 
     border: 1px solid transparent;
@@ -543,13 +554,37 @@ button.close-alert-box {
     padding: 1rem 1rem 0 1rem;
 }
 
-.box-render-bottom{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-    margin-top: 1em;
-    border-top: 1px solid #292929;
-    padding: 0.5em 1em 0.5em 1em;
+.box-render-author{
+    background-color: #292929;
+    margin: 0 auto;
+    border: 1px solid #1f1f1f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sep{
+    background-color: #111111;
+    border-top:2px solid #292929; 
+    border-bottom: 2px solid #292929;
+    height: 30px;
+    background-image: url(../img/system_sp_tl.png), url(../img/system_sp_tr.png), url(../img/back_encadre.png);
+    background-position: center left, center right, top center;
+    background-repeat: no-repeat, no-repeat, repeat;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 4), inset 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.box-render-author img{
+    border-radius: 10%;
+    border: 4px solid #1f1f1f;
+    padding: 3px;
+}
+
+.box-render-author b{
+    color: #d04c59;
+}
+
+.box-render-author h4{
+    color: #d04c59;
 }
 
 .box-bottom-left{
@@ -577,6 +612,31 @@ button.close-alert-box {
     top: -40px;
     z-index: 1;
     margin-bottom: 10px;
+    
+}
+
+.box-img img{
+    width: 99%;
+    border-radius: 7px;
+    z-index: 2;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    height: 220px;
+    top: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.box-img:hover::before {
+    position: absolute;
+    background: 
+        url('../img/bg_cat.svg') no-repeat center center,
+        linear-gradient(to bottom, #ec7437, #d04c59);
+    background-size: 50px;
+}
+
+.box-img:hover img {
+    opacity: 0.6;
 }
 
 .box-img::before {
@@ -592,17 +652,6 @@ button.close-alert-box {
     font-size: 0.7rem;
     color: #625765;
     z-index: 1;
-}
-
-.box-img img{
-    width: 99%;
-    border-radius: 7px;
-    z-index: 2;
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    height: 220px;
-    top: 30px;
 }
 
 .box-date{
@@ -733,7 +782,7 @@ button.close-alert-box {
     font-size: 20px;
     align-items: center;
     display: flex;
-    border-bottom: 1px solid #625765;
+    border-bottom: 1px solid #313131;
     padding: 0 0 10px 0px;
 }
 
@@ -745,9 +794,7 @@ button.close-alert-box {
     align-items: center;
     text-align: center;
     border: 1px solid #212121;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 
-                inset -2px -2px 5px rgba(255, 255, 255, 0.1);
-    background-color: #212121; 
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 4), inset 0 10px 20px rgba(0, 0, 0, 0.4);
     border-radius: 5px; 
     font-size: 0.8em;
 }
@@ -1136,8 +1183,8 @@ p{
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
-    gap: 0; /* Pas d'espace entre les colonnes */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
     text-align: center;
 }
 
@@ -1159,6 +1206,7 @@ p{
     z-index: 1; 
     width: 60px; 
     height: 60px;
+    padding: 3px;
 }
 
 .flag-mail {
@@ -1261,7 +1309,7 @@ p{
 }
 
 .social-media-link-wp {
-    border-top: 1px solid #625765;
+    border-top: 1px solid #313131;
     justify-content: space-between;
     align-items: center;
     margin: 10px auto 0px auto;
