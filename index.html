@@ -21,9 +21,8 @@
             </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <h1>Login</h1>            
-            <div class="card">
+        <div class="offcanvas-body">         
+            <div class="card"><!-- card connect -->
                 <div class="card__img">
                   <!-- https://neecride.github.io/demo-test/img/ -->
                   <img src="https://neecride.github.io/demo-test/img/default.png" alt="bgsite">
@@ -34,68 +33,78 @@
                 </div>
                 <div class="card__title">neecride</div>
                 <div class="card__subtitle">Web Development</div>
-            </div>
-            <div class="offcanvas-banners-btn">
-              <button class="Btn-submit-dark" type="submit">
-                <div class="sign">
-                  <i class="fa-solid fa-right-from-bracket"></i>
+                <div class="offcanvas-banners-btn">
+                  <button class="Btn-submit-dark" type="submit">
+                    <div class="sign">
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div class="text">Logout</div>
+                  </button>
+                  <button class="Btn-submit-dark" type="submit">
+                    <div class="sign">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text">Accont</div>
+                  </button>
                 </div>
-                <div class="text">Logout</div>
-              </button>
-              <button class="Btn-submit-dark" type="submit">
-                <div class="sign">
-                  <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="text">Accont</div>
-              </button>
-            </div>
-            <form action="">
-              <h1>Login</h1>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="username or email" aria-label="username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
-                </div>
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button class="Btn-submit-dark" type="submit">
-                  <div class="sign">
-                    <i class="fa-solid fa-paper-plane"></i>
-                  </div>
-                  <div class="text">Login</div>
-                </button>
-            </form>
+            </div><!-- card connect -->
 
-            <form action="">
-              <h1>Register</h1>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">@</span>
-                  <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
-                </div>              
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                  <input type="password" class="form-control" placeholder="password" aria-label="password-2" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                  <input type="password" class="form-control" placeholder="password repeat" aria-label="password-2" aria-describedby="basic-addon1">
-                </div>
-                <button class="Btn-submit-dark" type="submit">
-                  <div class="sign">
-                    <i class="fa-solid fa-paper-plane"></i>
+            <div class="card"><!-- card login -->
+              <h1>Login </h1>
+              <form action="">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="username or email" aria-label="username" aria-describedby="basic-addon1">
                   </div>
-                  <div class="text">Register</div>
-                </button>
-            </form>
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                      <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-check mb-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <div class="offcanvas-banners-btn">
+                    <button class="Btn-submit-dark" type="submit">
+                      <div class="sign">
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </div>
+                      <div class="text">Send</div>
+                    </button>
+                  </div>
+              </form>
+            </div><!-- card login -->
+
+            <div class="card"><!-- card register -->
+              <h1>Register</h1>
+              <form action="">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
+                  </div>              
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="password" aria-label="password-2" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="password repeat" aria-label="password-2" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="offcanvas-banners-btn">
+                    <button class="Btn-submit-dark" type="submit">
+                      <div class="sign">
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </div>
+                      <div class="text">Send</div>
+                    </button>
+                  </div>
+              </form>
+            </div><!-- card register -->
+
           </div>
         </div>
     </div>
@@ -501,12 +510,14 @@
                       <i class="input-icon fa-solid fa-comment"></i>
                       <textarea name="" class="input-field" id="story" rows="5" cols="33">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aperiam ducimus earum, pariatur aspernatur at libero iste itaque magnam praesentium sed? A quidem et numquam adipisci porro nam consequuntur dicta.</textarea>
                     </div>
-                    <button class="Btn-submit-dark" type="submit">
-                      <div class="sign">
-                        <i class="fa-solid fa-paper-plane"></i>
-                      </div>
-                      <div class="text">Submit</div>
-                    </button>
+                    <div class="offcanvas-banners-btn">
+                      <button class="Btn-submit-dark" type="submit">
+                        <div class="sign">
+                          <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                        <div class="text">Send</div>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </form>
