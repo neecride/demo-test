@@ -242,7 +242,7 @@ body{
 
 .slot-arcane img {
     width: 195px !important;
-    height: 90px;
+    height: 100px;
     object-fit: cover;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
@@ -250,3 +250,4 @@ body{
     border-bottom-right-radius: 6px;
     cursor: grab;
 }
+
