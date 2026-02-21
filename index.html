@@ -1,784 +1,207 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <title>module warframe build</title>
 </head>
+
 <body>
-    <div class="offcanvas offcanvas-end" data-bs-theme="dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              PixelCrafter&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                <g fill="none" fill-rule="nonzero">
-                  <path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01-.184-.092Z"/>
-                  <path fill="#fff" d="m19.921 9.75.07.058 1.838 1.838a.5.5 0 0 1 .058.638l-.058.07-9.476 9.475a.5.5 0 0 1-.637.058l-.07-.058-1.838-1.839a.5.5 0 0 1-.058-.637l.058-.07 9.475-9.475a.5.5 0 0 1 .562-.101l.076.043Zm-3.75-3.76 1.84 1.838a.5.5 0 0 1 0 .707l-9.476 9.476a.5.5 0 0 1-.707 0l-1.839-1.839a.5.5 0 0 1 0-.707l9.476-9.475a.5.5 0 0 1 .707 0ZM4.01 9.808a.5.5 0 0 1 .637-.058l.07.058 1.838 1.838a.5.5 0 0 1 .058.638l-.058.07-1.838 1.838a.5.5 0 0 1-.638.058l-.07-.058-1.838-1.838a.5.5 0 0 1-.058-.638l.058-.07L4.01 9.808Zm8.274-7.695.07.058 1.838 1.839a.5.5 0 0 1 .058.638l-.058.069-5.657 5.657a.5.5 0 0 1-.638.058l-.069-.058-1.839-1.839a.5.5 0 0 1-.057-.638l.057-.069 5.657-5.657a.5.5 0 0 1 .562-.1l.076.042Z"/>
-                </g>
-              </svg>
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">         
-            <div class="card"><!-- card connect -->
-                <div class="card__img">
-                  <!-- https://neecride.github.io/demo-test/img/ -->
-                  <img src="https://neecride.github.io/demo-test/img/default.png" alt="bgsite">
-                </div>
-                <div class="card__avatar">
-                  <!-- https://neecride.github.io/demo-test/img/ -->
-                  <img src="https://neecride.github.io/demo-test/img/avav.png" alt="ava">
-                </div>
-                <div class="card__title">neecride</div>
-                <div class="card__subtitle">Web Development</div>
-                <div class="offcanvas-banners-btn">
-                  <button class="Btn-submit-dark" type="submit">
-                    <div class="sign">
-                      <i class="fa-solid fa-right-from-bracket"></i>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="content-render background-2 mt-5">
+                    <div class="section-title">Build</div>
+                    <div class="grid-aura">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
                     </div>
-                    <div class="text">Logout</div>
-                  </button>
-                  <button class="Btn-submit-dark" type="submit">
-                    <div class="sign">
-                      <i class="fa-solid fa-user"></i>
+                    <div class="grid">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
                     </div>
-                    <div class="text">Accont</div>
-                  </button>
+                    <div class="grid-arcane">
+                        <div class="slot-arcane"></div>
+                        <div class="slot-arcane"></div>
+                    </div>
                 </div>
-            </div><!-- card connect -->
+            </div>            
+            <div class="col-lg-5">
+                <div class="content-render background-1 mt-5">
+                    <div class="section-title">Mods</div>
+                    <div class="bank" id="bank">
+                        <img src="https://placehold.co/195x285/ff4444/png" class="mod" draggable="true" id="img1">
+                        <img src="https://placehold.co/195x285/44ff44/png" class="mod" draggable="true" id="img2">
+                        <img src="https://placehold.co/195x285/4444ff/png" class="mod" draggable="true" id="img3">
+                        <img src="https://placehold.co/195x285/f4ff44/png" class="mod" draggable="true" id="img4">
+                        <img src="https://placehold.co/195x285/ff44f4/png" class="mod" draggable="true" id="img5">
+                        <img src="https://placehold.co/195x285/44fff4/png" class="mod" draggable="true" id="img6">
+                        <img src="https://placehold.co/195x285/aaaaaa/png" class="mod" draggable="true" id="img7">
+                        <img src="https://placehold.co/195x285/000000/png" class="mod" draggable="true" id="img8">
 
-            <div class="card"><!-- card login -->
-              <h1>Login </h1>
-              <form action="">
-                  <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                      <input type="text" class="form-control" placeholder="username or email" aria-label="username" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                      <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="form-check mb-3">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <div class="offcanvas-banners-btn">
-                    <button class="Btn-submit-dark" type="submit">
-                      <div class="sign">
-                        <i class="fa-solid fa-paper-plane"></i>
-                      </div>
-                      <div class="text">Send</div>
-                    </button>
-                  </div>
-              </form>
-            </div><!-- card login -->
+                        <img src="https://placehold.co/195x285/6827F5/png" class="mod" draggable="true" id="img9">
+                        <img src="https://placehold.co/195x285/2E142C/png" class="mod" draggable="true" id="img10">
+                        <img src="https://placehold.co/195x285/AB1AA0/png" class="mod" draggable="true" id="img11">
 
-            <div class="card"><!-- card register -->
-              <h1>Register</h1>
-              <form action="">
-                  <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-                      <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
-                  </div>              
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" class="form-control" placeholder="password" aria-label="password-2" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-                    <input type="password" class="form-control" placeholder="password repeat" aria-label="password-2" aria-describedby="basic-addon1">
-                  </div>
-                  <div class="offcanvas-banners-btn">
-                    <button class="Btn-submit-dark" type="submit">
-                      <div class="sign">
-                        <i class="fa-solid fa-paper-plane"></i>
-                      </div>
-                      <div class="text">Send</div>
-                    </button>
-                  </div>
-              </form>
-            </div><!-- card register -->
+                        <img src="https://placehold.co/195x285/1C142E/png" class="mod" draggable="true" id="img12">
+                        <img src="https://placehold.co/195x285/4D8A0C/png" class="mod" draggable="true" id="img13">
+                        <img src="https://placehold.co/195x285/283619/png" class="mod" draggable="true" id="img14">
+                    </div>
+                    <div class="section-title">Arcanes</div>
+                    <div class="bank-arcanes" id="bank-arcanes">
+                        <img src="https://placehold.co/195x90/ff4444/png" class="arcane" draggable="true" id="img1">
+                        <img src="https://placehold.co/195x90/44ff44/png" class="arcane" draggable="true" id="img2">
+                        <img src="https://placehold.co/195x90/4444ff/png" class="arcane" draggable="true" id="img3">
+                        <img src="https://placehold.co/195x90/f4ff44/png" class="arcane" draggable="true" id="img4">
+                        <img src="https://placehold.co/195x90/ff44f4/png" class="arcane" draggable="true" id="img5">
+                        <img src="https://placehold.co/195x90/44fff4/png" class="arcane" draggable="true" id="img6">
+                        <img src="https://placehold.co/195x90/aaaaaa/png" class="arcane" draggable="true" id="img7">
+                        <img src="https://placehold.co/195x90/000000/png" class="arcane" draggable="true" id="img8">
 
-          </div>
+                        <img src="https://placehold.co/195x90/6827F5/png" class="arcane" draggable="true" id="img9">
+                        <img src="https://placehold.co/195x90/2E142C/png" class="arcane" draggable="true" id="img10">
+                        <img src="https://placehold.co/195x90/AB1AA0/png" class="arcane" draggable="true" id="img11">
+
+                        <img src="https://placehold.co/195x90/1C142E/png" class="arcane" draggable="true" id="img12">
+                        <img src="https://placehold.co/195x90/4D8A0C/png" class="arcane" draggable="true" id="img13">
+                        <img src="https://placehold.co/195x90/283619/png" class="arcane" draggable="true" id="img14">
+                    </div>
+                </div>
+
+
+            </div>  
+
         </div>
+
+
+  
     </div>
-    <div class="container-highlight">
-        <div class="cover"></div>     
-        <div class="btn-queries">
-          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-        <div class="splash">
-          <h1>Discord</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestiae aperiam fugiat, perferendis dignissimos quasi? Sequi omnis illo consequatur distinctio quo itaque cum, aliquam nihil numquam ratione, repellendus temporibus corrupti.</p>
-          <div class="banner-buttons">
-                <a href="your-link-here" class="styled-button">
-                  Join Discord
-                  <div class="inner-button">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.317 4.15557C18.7873 3.45369 17.147 2.93658 15.4319 2.6404C15.4007 2.63469 15.3695 2.64897 15.3534 2.67754C15.1424 3.05276 14.9087 3.54226 14.7451 3.927C12.9004 3.65083 11.0652 3.65083 9.25832 3.927C9.09465 3.5337 8.85248 3.05276 8.64057 2.67754C8.62448 2.64992 8.59328 2.63564 8.56205 2.6404C6.84791 2.93563 5.20756 3.45275 3.67693 4.15557C3.66368 4.16129 3.65233 4.17082 3.64479 4.18319C0.533392 8.83155 -0.31895 13.3657 0.0991801 17.8436C0.101072 17.8655 0.11337 17.8864 0.130398 17.8997C2.18321 19.4073 4.17171 20.3225 6.12328 20.9291C6.15451 20.9386 6.18761 20.9272 6.20748 20.9015C6.66913 20.2711 7.08064 19.6063 7.43348 18.9073C7.4543 18.8664 7.43442 18.8178 7.39186 18.8016C6.73913 18.554 6.1176 18.2521 5.51973 17.9093C5.47244 17.8816 5.46865 17.814 5.51216 17.7816C5.63797 17.6873 5.76382 17.5893 5.88396 17.4902C5.90569 17.4721 5.93598 17.4683 5.96153 17.4797C9.88928 19.273 14.1415 19.273 18.023 17.4797C18.0485 17.4674 18.0788 17.4712 18.1015 17.4893C18.2216 17.5883 18.3475 17.6873 18.4742 17.7816C18.5177 17.814 18.5149 17.8816 18.4676 17.9093C17.8697 18.2588 17.2482 18.554 16.5945 18.8006C16.552 18.8168 16.533 18.8664 16.5538 18.9073C16.9143 19.6054 17.3258 20.2701 17.7789 20.9005C17.7978 20.9272 17.8319 20.9386 17.8631 20.9291C19.8241 20.3225 21.8126 19.4073 23.8654 17.8997C23.8834 17.8864 23.8948 17.8664 23.8967 17.8445C24.3971 12.6676 23.0585 8.17064 20.3482 4.18414C20.3416 4.17082 20.3303 4.16129 20.317 4.15557ZM8.02002 15.117C6.8375 15.117 5.86313 14.0313 5.86313 12.6981C5.86313 11.3648 6.8186 10.2791 8.02002 10.2791C9.23087 10.2791 10.1958 11.3743 10.1769 12.6981C10.1769 14.0313 9.22141 15.117 8.02002 15.117ZM15.9947 15.117C14.8123 15.117 13.8379 14.0313 13.8379 12.6981C13.8379 11.3648 14.7933 10.2791 15.9947 10.2791C17.2056 10.2791 18.1705 11.3743 18.1516 12.6981C18.1516 14.0313 17.2056 15.117 15.9947 15.117Z" fill="#523FD7"/>
-                    </svg>
-                  </div>
-                </a>
-                <button class="styled-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  Register
-                  <div class="inner-button">
-                    <svg
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="30px"
-                      width="30px"
-                      class="icon"
-                    >
-                      <defs>
-                        <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                          <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                          <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                        </linearGradient>
-                      </defs>
-                      <path
-                        fill="#979797"
-                        d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
-                      ></path>
-                    </svg>
-                  </div>
-                </button>                
-          </div>
-        </div>
-        <div id="boxes">
-          <div class="box-1">
-            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- https://neecride.github.io/demo-test/img/ -->
-            <img src="https://picsum.photos/id/160/300/200" alt="">
-            <div class="mask-1"></div>
-            <div class="base-arrow">
-              <a href="https://picsum.photos/id/160/300/200" target="_blank">
-                <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                      <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                      <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                    </linearGradient>
-                  </defs>
-                  <path fill="#fff" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="box-2">
-            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- https://neecride.github.io/demo-test/img/ -->
-            <img src="https://picsum.photos/id/96/300/200" alt="">
-            <div class="mask-2"></div>
-            <div class="base-arrow">
-              <a href="https://picsum.photos/id/96/300/200" target="_blank">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                      <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                      <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                    </linearGradient>
-                  </defs>
-                  <path fill="#d04c59" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="box-3">
-            <h5>10 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- https://neecride.github.io/demo-test/img/ -->
-            <img src="https://picsum.photos/id/180/300/200" alt="">
-            <div class="mask-3"></div>
-            <div class="base-arrow">
-              <a href="https://picsum.photos/id/180/300/200" target="_blank">
-                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                      <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                      <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                    </linearGradient>
-                  </defs>
-                  <path fill="#fff" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div id="line"></div>
-    <div id="boxnavbar">
-        <div class="container-fluid">
-            <div class="header-left">
-                <div class="header-logo">
-                    <a id="logo" class="navbar-brand" href="#">PixelCrafter&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                      <g fill="none" fill-rule="nonzero">
-                        <path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002-.071.035-.02.004-.014-.004-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113-.013.002-.185.093-.01.01-.003.011.018.43.005.012.008.007.201.093c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.004-.011.017-.43-.003-.012-.01-.01-.184-.092Z"/>
-                        <path fill="#fff" d="m19.921 9.75.07.058 1.838 1.838a.5.5 0 0 1 .058.638l-.058.07-9.476 9.475a.5.5 0 0 1-.637.058l-.07-.058-1.838-1.839a.5.5 0 0 1-.058-.637l.058-.07 9.475-9.475a.5.5 0 0 1 .562-.101l.076.043Zm-3.75-3.76 1.84 1.838a.5.5 0 0 1 0 .707l-9.476 9.476a.5.5 0 0 1-.707 0l-1.839-1.839a.5.5 0 0 1 0-.707l9.476-9.475a.5.5 0 0 1 .707 0ZM4.01 9.808a.5.5 0 0 1 .637-.058l.07.058 1.838 1.838a.5.5 0 0 1 .058.638l-.058.07-1.838 1.838a.5.5 0 0 1-.638.058l-.07-.058-1.838-1.838a.5.5 0 0 1-.058-.638l.058-.07L4.01 9.808Zm8.274-7.695.07.058 1.838 1.839a.5.5 0 0 1 .058.638l-.058.069-5.657 5.657a.5.5 0 0 1-.638.058l-.069-.058-1.839-1.839a.5.5 0 0 1-.057-.638l.057-.069 5.657-5.657a.5.5 0 0 1 .562-.1l.076.042Z"/>
-                      </g>
-                    </svg> 
-                      <a href="#" class="go_top show" id="goTopButton">
-                        <i class="fa-solid fa-caret-up text-light"></i>
-                      </a>
-                    </a>
-                </div>
-            </div>
-            <div class="header-right">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-            <div id="roundednav">
-                <div id="glossy"></div>
-                <div class="links">
-                    <nav class="navbar navbar-expand">
-                      <ul class="navbar-nav p-0">
-                        <li class="nav-item">
-                          <a id="forumnav" class="nav-link fa-i" href="#"><i class="fa-solid fa-house"></i> Home</a>
-                        </li>
-                        <li class="nav-item ">
-                          <a id="forumnav" class="nav-link fa-i" href="#"><i class="fas fa-comments"></i> Forum</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="button-submenu nav-link fa-i" data-toggle="dropdown"><i class="fa-solid fa-layer-group"></i> Menu</a>
-                            <ul class="submenu content-render-background-2">
-                              <li><a href="blog.html"><i class="fas fa-pen"></i> Blog</a></li>
-                              <li><a href="single-blog.html"><i class="fas fa-file-alt"></i> Blog Details</a></li>
-                              <li><a href="elements.html"><i class="fas fa-tools"></i> Element</a></li>
-                              <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                              <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
-                              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div> 
-    <div class="container build">
-      <div id="floating-box" class="floating-box"><!--floating box-->
-        <div class="social-encadre content-render-background-1">
-          <div class="social-encadre-top">
-            <!-- https://neecride.github.io/demo-test/img/ -->
-            <img src="https://neecride.github.io/demo-test/img/avav.png" alt="Avatar">
-            <div class="social-info">
-              <h4>Pseudo</h4>
-              <span>Role</span>
-            </div>
-          </div>
-          <div class="social-encadre-bottom">
-            <div class="social-stat">
-              <h4>580</h4>
-              <span>following</span>
-            </div>
-            <div class="social-stat encadre-border">
-              <h4>2180</h4>
-              <span>tweets</span>
-            </div>
-            <div class="social-stat">
-              <h4>380</h4>
-              <span>followers</span>
-            </div>
-          </div>
-        </div>
-        <div class="floating-content-render content-render-background-2">
-          <h4>Lorem ipsum</h4>
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, inventore ipsa? Quas fugiat distinctio est deserunt pariatur, nesciunt autem, ab neque temporibus iure corrupti veniam non perspiciatis praesentium voluptatibus optio?
-          lore
-          </p>
-        </div>
-      </div><!--floating box-->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="content-render content-render-background-1">
-            <div class="box-render">
-              <div class="box-title"><span><i class="fa-regular fa-file-lines"></i></span> Brève présentation</div>
-              <div class="box-img">
-                <div class="box-date">
-                  <span>Sat - 25 / 2024</span>
-                </div>
-                <!-- https://neecride.github.io/demo-test/img/ -->
-                <a href="">
-                  <img src="https://neecride.github.io/demo-test/img/b64998afc5.jpg" alt="">
-                </a>
-              </div>
-              <p>
-                Chaque gabarit est personalisable et bien séparé pour des utilisations précise : une news complète, une simple annonce etc. une class css correspondra  
-              </p>
-              <p>
-                <h5>Par exemple :</h5>
-                <ul>
-                  <li>une span avec un font-awesome dans un h1 donnera un titre avec une icone</li>
-                  <li>la class content-render-background-2 ajoutera une bordure sur les coté d'une box</li>
-                </ul>
-              </p>
-              <p>
-                Dans les cas d'utilisation de mon cms chaque espace aura un choix stylistique, soit une box complète pour une news ou un simple élément qui affichera un des dernier tweet par exemple.
-              </p>
-              <p>La représentation actuelle est statique et ne propose pas de dynmisation comme on pourrais le faire avec un langage comme PHP par exemple.</p>
-              <p>Ce design utilise en partie bootstrap pour la grille responsive le reste n'est que du css maison sans utilisation de l'IA*</p>
-              <i>* L'ia a été utiliser pour quelque info avec javascrypt qui n'est pas mon point fort</i>
-              <h1>h1. Bootstrap heading</h1>
-              <h2>h2. Bootstrap heading</h2>
-              <h3>h3. Bootstrap heading</h3>
-              <h4>h4. Bootstrap heading</h4>
-              <h5>h5. Bootstrap heading</h5>
-              <h6>h6. Bootstrap heading</h6>
-            </div>
-            <div class="sep"></div>
-            <div class="box-render-author">
-              <div class="row" style="padding:10px 20px;">
-                <div class="col-md-6">
-                    <h4 style="padding-bottom: 15px;"><i class="fa-solid fa-user-pen"></i> A propos de l'auteur</h4>
-                    <div class="row">
-                        <div class="col-md-4">
-                          <img src="https://neecride.github.io/demo-test/img/avav.png" data-original-title="" title="" alt="">							
-                        </div>
-                        <div class="col-md-8">
-                              <p style="margin:0;"><b>Pseudo :</b> Auteur</p>
-                              <p style="margin:0;">
-                              <b>Inscrit le :</b> 10/10/2000
-                              </p>
-                              <p style="margin:0;">
-                              <b>URL :</b> <a target="blank" href="https://www.deviantart.com/snyl-laposny">@Auteur</a>
-                              </p>
-                              <p style="margin:0;"><b>Rôle :</b> Administrator</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-6">
-                    <h4 style="padding-bottom: 15px;"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Autres actu de l'auteur</h4>
-                    <ul class="list-group list-group-auteur">
-                      <li class="list-group-item">
-                        <a class="author-link" href="#" rel="author">
-                          Voir mes autres contribution
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-                <div class="col-md-12" style="margin-top:10px;">
-                      <p>
-                        <b>Description de l'auteur :</b> 
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, suscipit quibusdam laudantium animi beatae in, 
-                        quas dignissimos quos perspiciatis labore soluta molestiae architecto placeat? Perferendis eos quaerat saepe possimus quo.
-                      </p>	
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="content-render content-render-background-2">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-github"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="content-render content-render-background-1">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-x-twitter"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="content-render content-render-background-2">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-twitch"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="content-render content-render-background-3">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-github"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="content-render content-render-background-4">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-x-twitter"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="content-render content-render-background-3">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-twitch"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-6">
-          <div class="content-render content-render-background-1">
-            <div class="box-render">
-              <h1 class="box-complete-title">
-                <span><i class="fa-regular fa-file-lines"></i></span> Lorem ipsum
-                <a href="your_link_here" class="inner-button">
-                  <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
-                    <defs>
-                      <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                        <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                        <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                      </linearGradient>
-                    </defs>
-                    <path fill="url(#iconGradient)" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
-                  </svg>
-                </a>
-              </h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6">
-          <div class="content-render content-render-background-2">
-            <div class="box-render">
-              <h1 class="box-complete-title"><span><i class="fa-regular fa-file-lines"></i></span> Lorem ipsum
-                <a href="your_link_here" class="inner-button">
-                  <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
-                    <defs>
-                      <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                        <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                        <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                      </linearGradient>
-                    </defs>
-                    <path fill="url(#iconGradient)" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
-                  </svg>
-                </a>
-              </h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="content-render content-render-background-2">
-            <div class="box-render">
-              <h4 class="box-simple-title"><span><i class="fa-brands fa-square-git"></i></span> Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit excepturi omnis dignissimos ex nam dicta voluptatum, temporibus sunt minus ea repudiandae. Laborum sequi architecto hic? Et vitae qui fugiat ea?
-              Totam commodi obcaecati, modi accusamus maiores incidunt dolor labore velit ducimus adipisci eius architecto! Perspiciatis delectus labore omnis velit quae quibusdam nisi doloribus quo. Enim rem quisquam sequi magnam deleniti!
-              Nostrum quibusdam omnis libero vitae eius architecto. Tempora eligendi doloremque, ab eius, est ex fugit placeat alias quia expedita obcaecati adipisci officia id. Consequuntur nostrum, pariatur ipsum nisi explicabo molestiae?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi delectus qui facilis. Cum sit aspernatur laborum laudantium amet perferendis commodi facere, quas magnam voluptate totam error enim dolore ut!</p>
-              <form action="">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="username">Your username:</label>  
-                    <div class="field mb-3">
-                      <i class="input-icon fa-solid fa-user"></i>
-                      <input type="email" id="username" class="input-field" placeholder="Input">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email">Your email:</label>                    
-                    <div class="field mb-3">
-                      <i class="input-icon fa-solid fa-at"></i>
-                      <input type="text" id="email" class="input-field" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <label for="story">Tell us your story:</label>
-                    <div class="field mb-3">
-                      <i class="input-icon fa-solid fa-comment"></i>
-                      <textarea name="" class="input-field" id="story" rows="5" cols="33">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aperiam ducimus earum, pariatur aspernatur at libero iste itaque magnam praesentium sed? A quidem et numquam adipisci porro nam consequuntur dicta.</textarea>
-                    </div>
-                    <div class="offcanvas-banners-btn">
-                      <button class="Btn-submit-dark" type="submit">
-                        <div class="sign">
-                          <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                        <div class="text">Send</div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="content-render content-render-background-2">
-            <div class="box-render">
-              <div class="box-title"><span><i class="fa-regular fa-file-lines"></i></span> Lorem ipsum</div>
-              <div class="box-img">
-                <div class="box-date">
-                  <span>Wed - 21 / 2024</span>
-                </div>
-                <!-- https://neecride.github.io/demo-test/img/ -->
-                 <a href="">
-                   <img src="https://neecride.github.io/demo-test/img/1.jpg" alt="">
-                 </a>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-            <div class="sep"></div>
-            <div class="box-render-author">
-              <div class="row" style="padding:10px 20px;">
-                <div class="col-md-6">
-                    <h4 style="padding-bottom: 15px;"><i class="fa-solid fa-user-pen"></i> A propos de l'auteur</h4>
-                    <div class="row">
-                        <div class="col-md-4">
-                          <img src="https://neecride.github.io/demo-test/img/avav.png" data-original-title="" title="" alt="">							
-                        </div>
-                        <div class="col-md-8">
-                              <p style="margin:0;"><b>Pseudo :</b> Auteur</p>
-                              <p style="margin:0;">
-                              <b>Inscrit le :</b> 10/10/2000
-                              </p>
-                              <p style="margin:0;">
-                              <b>URL :</b> <a target="blank" href="https://www.deviantart.com/snyl-laposny">@Auteur</a>
-                              </p>
-                              <p style="margin:0;"><b>Rôle :</b> Administrator</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-6">
-                    <h4 style="padding-bottom: 15px;"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Autres actu de l'auteur</h4>
-                    <ul class="list-group list-group-auteur">
-                      <li class="list-group-item">
-                        <a class="author-link" href="#" rel="author">
-                          Voir mes autres contribution
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-                <div class="col-md-12" style="margin-top:10px;">
-                      <p>
-                        <b>Description de l'auteur :</b> 
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, suscipit quibusdam laudantium animi beatae in, 
-                        quas dignissimos quos perspiciatis labore soluta molestiae architecto placeat? Perferendis eos quaerat saepe possimus quo.
-                      </p>	
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="content-render content-render-background-3">
-            <div class="box-render">
-              <h4 class="box-simple-title">Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="content-render content-render-background-3">
-            <div class="box-render">
-              <h4 class="box-simple-title">Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia culpa, recusandae consequuntur cum doloremque explicabo quasi omnis quam ipsa molestias quidem exercitationem iste illum incidunt delectus asperiores. A, mollitia!</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row">
-          <div class="col-md-12">
-            <div class="content-render content-render-background-1">
-              <div class="footer">
-                <div style="padding: 10px;">
-                  <h4>
-                    Info
-                  </h4>
-                  <span>
-                    Copyright by <a href="https://www.deviantart.com/snyl-laposny">snyl-laposny</a>
-                  </span>
-                  <span>
-                    <a href="">Code for conduct</a>
-                  </span>
-                  <span>
-                    <a href="">Terms</a>
-                  </span>
-                </div>
-                <div style="padding: 10px;">
-                  <h4 class="footer-admin">
-                    <div class="flag-mail">
-                      <a href="mailto:admin@me.fr"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                    <!-- https://neecride.github.io/demo-test/img/ -->
-                    <img src="https://neecride.github.io/demo-test/img/avav.png" class="footer-img" alt="Administrator">
-                    Administrator
-                    <span>Mail : admin@me.fr</span>
-                  </h4>
-                </div>
-                <div style="padding: 10px;">
-                  <h4>
-                    Contact
-                    <span class="mb-3"><i class="fa-solid fa-mobile-screen-button"></i> +33 xxx xxx xxx</span>
-                    <form action="">
-                      <div class="field">
-                          <i class="input-icon fa-solid fa-at"></i>
-                          <input autocomplete="off" placeholder="Email" class="input-field" type="text">
-                          <button class="input-btn">
-                            <i class="fa-solid fa-paper-plane"></i>
-                          </button>
-                      </div>
-                    </form>
-                  </h4>
-                </div>
-              </div>
-              <div class="social-media-link-wp">
-                <div class="copy-right-link">
-                  <span>©2024 by <a href="https://github.com/neecride">@neecride</a></span>
-                </div>
-                <div class="social-media-icon-wp">
-                    <ul class="wrapper">
-                      <li class="icon youtube">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 16 16">
-                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" fill="currentColor"></path>
-                        </svg>
-                      </li>
-                      <li class="icon twitter">
-                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512">
-                          <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="currentColor">
-                          </path>
-                        </svg>
-                      </li>
-                      <li class="icon github">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 16 16">
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" fill="currentColor"></path>
-                        </svg>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div><!-- build -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/roundednavbar.js"></script>
-    
-    <script>
-        $(document).ready(function() {
-            const $box = $('#floating-box');
-            const $menu = $('.navbar'); // Sélectionne le menu fixe
-            const boxOffset = $box.offset().top; // Position initiale de la boîte
-            const fixedTop = 70; // Position souhaitée en sticky (70px du haut)
-    
-            // Fonction pour vérifier et ajuster la position de la boîte
-            function adjustBoxPosition() {
-                const scrollTop = $(window).scrollTop();
-    
-                if (scrollTop + fixedTop > boxOffset) {
-                    // Passe en mode sticky
-                    $box.addClass('sticky').css('top', fixedTop + 'px'); // Définit la position sticky
-                } else {
-                    // Reprend la position absolue
-                    $box.removeClass('sticky').css('top', boxOffset + 'px'); // Retourne à la position initiale
-                }
-            }
-    
-            // Attache l'événement scroll
-            $(window).on('scroll', adjustBoxPosition);
-    
-            // Vérifie la position dès le chargement de la page
-            adjustBoxPosition();
-        });
-    </script>
-    <script>
-      $(document).ready(function () {
-          const $line = $('#line');
-          const $navbar = $('#boxnavbar');
-          const $menuLinks = $('.navbar .nav-link'); // Tous les liens du menu principal
-
-          const lineInitialOffset = $line.offset().top; // Position initiale de la ligne
-          const navbarHeight = $navbar.outerHeight();  // Hauteur du menu fixe
-          const stickyThreshold = 670; // Seuil de défilement pour activer sticky-line
-
-          // Restaurer l'état au chargement de la page
-          const isSticky = localStorage.getItem('lineIsSticky') === 'true';
-          if (isSticky) {
-              $line.addClass('sticky-line');
-              $menuLinks.addClass('show-hover-caret');
-          }
-
-          $(window).on('scroll', handleScroll);
-
-          function handleScroll() {
-              const scrollTop = $(window).scrollTop();
-
-              if (scrollTop >= stickyThreshold) {
-                  // Ajoute la classe sticky-line et show-hover-caret quand le défilement atteint le seuil
-                  $line.addClass('sticky-line');
-                  $menuLinks.addClass('show-hover-caret');
-                  localStorage.setItem('lineIsSticky', 'true'); // Enregistrer l'état
-              } else {
-                  // Supprime les classes si on remonte au-dessus du seuil
-                  $line.removeClass('sticky-line');
-                  $menuLinks.removeClass('show-hover-caret');
-                  localStorage.setItem('lineIsSticky', 'false'); // Enregistrer l'état
-              }
-          }
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-      const dropdownToggles = document.querySelectorAll("[data-toggle='dropdown']");
-
-      dropdownToggles.forEach(toggle => {
-            toggle.addEventListener("click", (e) => {
-                e.preventDefault();
-
-                // Trouver l'élément parent .nav-item
-                const parent = toggle.closest(".nav-item");
-
-                // Fermer les autres menus
-                document.querySelectorAll(".nav-item.open").forEach(item => {
-                    if (item !== parent) {
-                        item.classList.remove("open");
-                    }
-                });
-
-                // Basculer la classe .open
-                parent.classList.toggle("open");
-            });
-        });
-
-        // Fermer le menu en cliquant en dehors
-        document.addEventListener("click", (e) => {
-            const isClickInside = e.target.closest(".nav-item");
-                if (!isClickInside) {
-                    document.querySelectorAll(".nav-item.open").forEach(item => {
-                        item.classList.remove("open");
-                    });
-                }
-            });
-        });
-    </script>
 </body>
-</html>
+<script src="js/jquery.min.js"></script>
+
+<!-- drag&drop -->
+<script>
+const bank = document.getElementById("bank");
+const bankArcane = document.getElementById("bank-arcanes");
+
+let draggedItem = null;
+
+// DRAG START
+document.addEventListener("dragstart", function (e) {
+    if (e.target.tagName === "IMG") {
+        draggedItem = e.target;
+        setTimeout(() => {
+            e.target.style.display = "none";
+        }, 0);
+    }
+});
+
+// DRAG END
+document.addEventListener("dragend", function () {
+    if (draggedItem) {
+        draggedItem.style.display = "block";
+        draggedItem = null;
+    }
+});
+
+// AUTORISER DROP
+document.addEventListener("dragover", function (e) {
+    e.preventDefault();
+});
+
+// DROP
+document.addEventListener("drop", function (e) {
+    e.preventDefault();
+    if (!draggedItem) return;
+
+    const isItem = draggedItem.classList.contains("mod");
+    const isArcane = draggedItem.classList.contains("arcane");
+
+    const slot = e.target.closest(".slot");
+    const slotArcane = e.target.closest(".slot-arcane");
+
+    /* ==========================
+       SYSTEME NORMAL
+    ========================== */
+    if (isItem && slot) {
+
+        const existingImage = slot.querySelector("img");
+
+        if (existingImage) {
+            bank.appendChild(existingImage);
+        }
+
+        slot.appendChild(draggedItem);
+        return;
+    }
+
+    if (isItem && (e.target.id === "bank" || e.target.closest("#bank"))) {
+        bank.appendChild(draggedItem);
+        return;
+    }
+
+    /* ==========================
+       SYSTEME ARCANE
+    ========================== */
+    if (isArcane && slotArcane) {
+
+        const existingImage = slotArcane.querySelector("img");
+
+        if (existingImage) {
+            bankArcane.appendChild(existingImage);
+        }
+
+        slotArcane.appendChild(draggedItem);
+        return;
+    }
+
+    if (isArcane && (e.target.id === "bank-arcanes" || e.target.closest("#bank-arcanes"))) {
+        bankArcane.appendChild(draggedItem);
+        return;
+    }
+});
+</script>
+
+<script>
+  // ==============================
+// CLICK DROIT → RETOUR EN BANK
+// ==============================
+document.addEventListener("contextmenu", function (e) {
+
+    const img = e.target;
+
+    if (img.tagName !== "IMG") return;
+
+    const slot = img.closest(".slot");
+    const slotArcane = img.closest(".slot-arcane");
+
+    // Si image dans slot normal
+    if (slot && img.classList.contains("mod")) {
+        e.preventDefault(); // bloque menu clic droit
+        bank.appendChild(img);
+    }
+
+    // Si image dans slot arcane
+    if (slotArcane && img.classList.contains("arcane")) {
+        e.preventDefault();
+        bankArcane.appendChild(img);
+    }
+
+});
+</script>   
 
