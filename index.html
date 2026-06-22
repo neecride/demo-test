@@ -1,207 +1,455 @@
-<!doctype html>
-<head>
+<!DOCTYPE html>
+<html lang="">
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Language" content="fr">
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="../mmo/images/avav.png">
+    <link rel="stylesheet" type="text/css" href="../mmo/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <title>module warframe build</title>
-</head>
+  </head>
+  <body>
+    <header>
+      <div class="features-splash">Game Catégories</div>
+      <div class="menu">
+        <div class="menu-container">
+          <div class="logo">
+            <img src="../mmo/images/400px-Logo_Guild_Wars_3.png" alt="logo">
+          </div>
+          
+          <!-- Bouton burger (apparaît sur mobile/tablette) -->
+          <div class="menu-burger" id="menuBurger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <ul>
+            <li><a href="#1">home</a></li>
+            <li><a href="#2">forum</a></li>
+            <li><a href="#3">contact</a></li>
+          </ul>
+          
+          <div class="right-menu">
+            <a href="">Connexion</a>
+            <a href="">Inscription</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="content-render background-2 mt-5">
-                    <div class="section-title">Build</div>
-                    <div class="grid-aura">
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                    </div>
-                    <div class="grid">
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                    </div>
-                    <div class="grid-arcane">
-                        <div class="slot-arcane"></div>
-                        <div class="slot-arcane"></div>
-                    </div>
+      <div class="content-top">
+        <!-- Vidéo en arrière-plan -->
+        <video class="top-video" autoplay muted loop playsinline>
+          <source src="../mmo/vidéos/elden-ring-moewalls-com.mp4" type="video/mp4">
+          <source src="../mmo/vidéos/elden-ring-moewalls-com.mp4.webm" type="video/webm">
+          Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        <div class="back-item"></div>
+        <img class="arrow-left" alt="" src="../mmo/images/arrow-left.png">
+        <img class="arrow-right" alt="" src="../mmo/images/arrow-right.png">
+        <div class="features-wrapper">
+          <div class="features">
+            <a class="item" href="">
+                <div class="item-wraper">
+                  <img src="../mmo/images/cats/mmo.png" alt="">
                 </div>
-            </div>            
-            <div class="col-lg-5">
-                <div class="content-render background-1 mt-5">
-                    <div class="section-title">Mods</div>
-                    <div class="bank" id="bank">
-                        <img src="https://placehold.co/195x285/ff4444/png" class="mod" draggable="true" id="img1">
-                        <img src="https://placehold.co/195x285/44ff44/png" class="mod" draggable="true" id="img2">
-                        <img src="https://placehold.co/195x285/4444ff/png" class="mod" draggable="true" id="img3">
-                        <img src="https://placehold.co/195x285/f4ff44/png" class="mod" draggable="true" id="img4">
-                        <img src="https://placehold.co/195x285/ff44f4/png" class="mod" draggable="true" id="img5">
-                        <img src="https://placehold.co/195x285/44fff4/png" class="mod" draggable="true" id="img6">
-                        <img src="https://placehold.co/195x285/aaaaaa/png" class="mod" draggable="true" id="img7">
-                        <img src="https://placehold.co/195x285/000000/png" class="mod" draggable="true" id="img8">
-
-                        <img src="https://placehold.co/195x285/6827F5/png" class="mod" draggable="true" id="img9">
-                        <img src="https://placehold.co/195x285/2E142C/png" class="mod" draggable="true" id="img10">
-                        <img src="https://placehold.co/195x285/AB1AA0/png" class="mod" draggable="true" id="img11">
-
-                        <img src="https://placehold.co/195x285/1C142E/png" class="mod" draggable="true" id="img12">
-                        <img src="https://placehold.co/195x285/4D8A0C/png" class="mod" draggable="true" id="img13">
-                        <img src="https://placehold.co/195x285/283619/png" class="mod" draggable="true" id="img14">
-                    </div>
-                    <div class="section-title">Arcanes</div>
-                    <div class="bank-arcanes" id="bank-arcanes">
-                        <img src="https://placehold.co/195x90/ff4444/png" class="arcane" draggable="true" id="img1">
-                        <img src="https://placehold.co/195x90/44ff44/png" class="arcane" draggable="true" id="img2">
-                        <img src="https://placehold.co/195x90/4444ff/png" class="arcane" draggable="true" id="img3">
-                        <img src="https://placehold.co/195x90/f4ff44/png" class="arcane" draggable="true" id="img4">
-                        <img src="https://placehold.co/195x90/ff44f4/png" class="arcane" draggable="true" id="img5">
-                        <img src="https://placehold.co/195x90/44fff4/png" class="arcane" draggable="true" id="img6">
-                        <img src="https://placehold.co/195x90/aaaaaa/png" class="arcane" draggable="true" id="img7">
-                        <img src="https://placehold.co/195x90/000000/png" class="arcane" draggable="true" id="img8">
-
-                        <img src="https://placehold.co/195x90/6827F5/png" class="arcane" draggable="true" id="img9">
-                        <img src="https://placehold.co/195x90/2E142C/png" class="arcane" draggable="true" id="img10">
-                        <img src="https://placehold.co/195x90/AB1AA0/png" class="arcane" draggable="true" id="img11">
-
-                        <img src="https://placehold.co/195x90/1C142E/png" class="arcane" draggable="true" id="img12">
-                        <img src="https://placehold.co/195x90/4D8A0C/png" class="arcane" draggable="true" id="img13">
-                        <img src="https://placehold.co/195x90/283619/png" class="arcane" draggable="true" id="img14">
-                    </div>
+              <span>MMO</span>
+            </a>
+            <a class="item" href="">
+                <div class="item-wraper">
+                  <img src="../mmo/images/cats/deck.png" alt="">
                 </div>
+              <span>Steam-Deck</span>
+            </a>
+            <a class="item" href="">
+                <div class="item-wraper">
+                  <img src="../mmo/images/cats/combat.png" alt="">
+                </div>
+              <span>Combat</span>
+            </a>
+            <a class="item" href="">
+                <div class="item-wraper">
+                  <img src="../mmo/images/cats/rpg.png" alt="">
+                </div>
+              <span>Rpg</span>
+            </a>
+            <a class="item" href="">
+                <div class="item-wraper">
+                  <img src="../mmo/images/cats/course.png" alt="">
+                </div>
+              <span>Course</span>
+            </a>
+            <!-- Groupe 2 (items 6-10) -->
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Action</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Stratégie</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Aventure</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Indie</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Simulation</span>
+            </a>
 
-
-            </div>  
-
+            <!-- Groupe 3 (items 11-15) -->
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Sport</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Puzzle</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>Racing</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>FPS</span>
+            </a>
+            <a class="item" href="">
+              <div class="item-wraper">
+                <img src="../mmo/images/cats/cat.png" alt="">
+              </div>
+              <span>RTS</span>
+            </a>
+          </div>
         </div>
 
 
+
+        <!-- Optionnel : image de fallback si la vidéo ne charge pas -->
+        <!-- <img class="top-img" src="../mmo/images/1.png" alt=""> -->
+      </div>
+      
+
+      <div class="alert-box alert-black">
+          <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, maiores laborum. Tempore, voluptatum! Est a dicta velit cumque, dolorem eius aliquam dolorum molestiae voluptate tempore</p>        
+          </div>
+      </div>
+
+      <div class="content-base">
+
+        <div class="alert-box alert-rouge">
+            <div class="alert-box-content">
+              <div class="image-wrapper">
+                <img src="../mmo/images/fh8pgfrkzcxikgwizdc58aa3-overview-explore.max.jpg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero maxime minima, ab omnis autem provident temporibus illo? Sapiente illum vitae nemo architecto eum voluptates dolores dicta nulla, dolor culpa.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert">
+            <div class="alert-box-content">
+              <div class="image-wrapper">
+                <img src="../mmo/images/hq58d46g2xeu2286obcgock5-overview-action-combat.max.jpg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
   
+        <div class="alert-box alert">
+            <div class="alert-box-content">
+              <div class="image-wrapper">
+                <img src="../mmo/images/n8v791s8lpu09gsgbxfiwcym-overview-join-vaelwardens.max.jpg" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert-vert">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert-turquoise">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert-bleu">
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+        
+        <div class="alert-box alert-brown">
+            <div class="alert-box-title">Lorem</div>
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert-black">
+            <div class="alert-box-title">Lorem</div>
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+
+        <div class="alert-box alert-violet">
+            <div class="alert-box-title">lorem </div>
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="content-bottom">
+        <div class="alert-box alert-marine">
+            <div class="alert-box-title">Master Action Combat</div>
+            <div class="alert-box-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            </div>
+        </div>
+      </div>
+
+    </main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Communauté</a></li>
+        <li><a href="#">Événements</a></li>
+      </ul>
     </div>
 
-</body>
-<script src="js/jquery.min.js"></script>
+    <div class="footer-section">
+      <h3>Ressources</h3>
+      <ul>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Règles</a></li>
+      </ul>
+    </div>
 
-<!-- drag&drop -->
-<script>
-const bank = document.getElementById("bank");
-const bankArcane = document.getElementById("bank-arcanes");
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
 
-let draggedItem = null;
+    <div class="footer-section newsletter">
+      <h3>Newsletter</h3>
+      <p>Restez informé des dernières actualités</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Votre email" required>
+        <button type="submit">S'abonner</button>
+      </form>
+    </div>
+  </div>
 
-// DRAG START
-document.addEventListener("dragstart", function (e) {
-    if (e.target.tagName === "IMG") {
-        draggedItem = e.target;
-        setTimeout(() => {
-            e.target.style.display = "none";
-        }, 0);
-    }
-});
-
-// DRAG END
-document.addEventListener("dragend", function () {
-    if (draggedItem) {
-        draggedItem.style.display = "block";
-        draggedItem = null;
-    }
-});
-
-// AUTORISER DROP
-document.addEventListener("dragover", function (e) {
-    e.preventDefault();
-});
-
-// DROP
-document.addEventListener("drop", function (e) {
-    e.preventDefault();
-    if (!draggedItem) return;
-
-    const isItem = draggedItem.classList.contains("mod");
-    const isArcane = draggedItem.classList.contains("arcane");
-
-    const slot = e.target.closest(".slot");
-    const slotArcane = e.target.closest(".slot-arcane");
-
-    /* ==========================
-       SYSTEME NORMAL
-    ========================== */
-    if (isItem && slot) {
-
-        const existingImage = slot.querySelector("img");
-
-        if (existingImage) {
-            bank.appendChild(existingImage);
+  <div class="footer-bottom">
+    <p>&copy; 2024 - Tous droits réservés</p>
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGU</a>
+    </div>
+  </div>
+</footer>
+  <script
+    src="https://code.jquery.com/jquery-4.0.0.slim.js"
+    integrity="sha256-M+GjhMBfXikM1izMplICCTscIj5hzPCp6uDzaypxtgg="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const features = document.querySelector('.features');
+      const arrowLeft = document.querySelector('.arrow-left');
+      const arrowRight = document.querySelector('.arrow-right');
+      const items = document.querySelectorAll('.item');
+      const wrapper = document.querySelector('.features-wrapper');
+      
+      // Constantes
+      const ITEM_WIDTH = 228; // Largeur d'un item
+      const GAP = 25; // Gap entre les items
+      const ITEMS_PER_PAGE = 5; // Nombre d'items par page
+      const TOTAL_ITEMS = items.length;
+      
+      // Calcul de la largeur totale d'un item + gap
+      const ITEM_TOTAL_WIDTH = ITEM_WIDTH + GAP;
+      
+      // Calcul du nombre total de pages
+      const TOTAL_PAGES = Math.ceil(TOTAL_ITEMS / ITEMS_PER_PAGE);
+      
+      // Calcul du décalage max (dernière page)
+      const MAX_OFFSET = Math.max(0, (TOTAL_PAGES - 1) * ITEMS_PER_PAGE * ITEM_TOTAL_WIDTH);
+      
+      let currentPage = 0; // Page actuelle (0-indexé)
+      
+      // Fonction pour mettre à jour le carrousel
+      function updateCarousel(animate = true) {
+        // Calcul du décalage : page * (5 items * largeur totale)
+        const offset = currentPage * ITEMS_PER_PAGE * ITEM_TOTAL_WIDTH;
+        
+        // Appliquer la transition
+        if (!animate) {
+          features.style.transition = 'none';
+        } else {
+          features.style.transition = 'transform 0.5s ease-in-out';
         }
-
-        slot.appendChild(draggedItem);
-        return;
-    }
-
-    if (isItem && (e.target.id === "bank" || e.target.closest("#bank"))) {
-        bank.appendChild(draggedItem);
-        return;
-    }
-
-    /* ==========================
-       SYSTEME ARCANE
-    ========================== */
-    if (isArcane && slotArcane) {
-
-        const existingImage = slotArcane.querySelector("img");
-
-        if (existingImage) {
-            bankArcane.appendChild(existingImage);
+        
+        // Déplacer les items
+        features.style.transform = `translateX(-${offset}px)`;
+        
+        // Gérer l'affichage des flèches
+        const isFirst = currentPage === 0;
+        const isLast = currentPage >= TOTAL_PAGES - 1;
+        
+        arrowLeft.style.opacity = isFirst ? '0.3' : '1';
+        arrowRight.style.opacity = isLast ? '0.3' : '1';
+        arrowLeft.style.pointerEvents = isFirst ? 'none' : 'auto';
+        arrowRight.style.pointerEvents = isLast ? 'none' : 'auto';
+        
+        // Réinitialiser la transition après un déplacement instantané
+        if (!animate) {
+          setTimeout(() => {
+            features.style.transition = 'transform 0.5s ease-in-out';
+          }, 50);
         }
+      }
+      
+      // Aller à la page suivante
+      function nextPage() {
+        if (currentPage < TOTAL_PAGES - 1) {
+          currentPage++;
+          updateCarousel(true);
+        }
+      }
+      
+      // Aller à la page précédente
+      function prevPage() {
+        if (currentPage > 0) {
+          currentPage--;
+          updateCarousel(true);
+        }
+      }
+      
+      // Événements des flèches
+      arrowRight.addEventListener('click', nextPage);
+      arrowLeft.addEventListener('click', prevPage);
+      
+      // Navigation au clavier (optionnel)
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight') {
+          nextPage();
+        } else if (e.key === 'ArrowLeft') {
+          prevPage();
+        }
+      });
+      
+      // Support du swipe sur mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      wrapper.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      
+      wrapper.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) { // Seuil de swipe
+          if (diff > 0) {
+            nextPage();
+          } else {
+            prevPage();
+          }
+        }
+      }, { passive: true });
+      
+      // Redimensionnement (pour recalculer si besoin)
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          updateCarousel(false);
+        }, 100);
+      });
+      
+      // Initialisation
+      setTimeout(() => updateCarousel(false), 100);
+    });
+  </script>
 
-        slotArcane.appendChild(draggedItem);
-        return;
-    }
 
-    if (isArcane && (e.target.id === "bank-arcanes" || e.target.closest("#bank-arcanes"))) {
-        bankArcane.appendChild(draggedItem);
-        return;
-    }
-});
-</script>
+  <script>
+    // À ajouter dans votre fichier JS ou dans une balise <script>
+  const menuBurger = document.getElementById('menuBurger');
+  const menuUl = document.querySelector('.menu ul');
 
-<script>
-  // ==============================
-// CLICK DROIT → RETOUR EN BANK
-// ==============================
-document.addEventListener("contextmenu", function (e) {
-
-    const img = e.target;
-
-    if (img.tagName !== "IMG") return;
-
-    const slot = img.closest(".slot");
-    const slotArcane = img.closest(".slot-arcane");
-
-    // Si image dans slot normal
-    if (slot && img.classList.contains("mod")) {
-        e.preventDefault(); // bloque menu clic droit
-        bank.appendChild(img);
-    }
-
-    // Si image dans slot arcane
-    if (slotArcane && img.classList.contains("arcane")) {
-        e.preventDefault();
-        bankArcane.appendChild(img);
-    }
-
-});
-</script>   
-
+  if (menuBurger) {
+    menuBurger.addEventListener('click', function() {
+      menuUl.classList.toggle('active');
+    });
+  }
+  </script>
+  </body>
+</html>
