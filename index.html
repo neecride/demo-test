@@ -4,114 +4,125 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Language" content="fr">
     <title></title>
-    <link rel="icon" type="image/x-icon" href="https://neecride.github.io/demo-test/images/avav.png">
-    <link rel="stylesheet" type="text/css" href="https://neecride.github.io/demo-test/css/style.css">
+    <link rel="icon" type="image/x-icon" href="https://github.com/neecride/demo-test/mmo/images/avav.png">
+    <link rel="stylesheet" type="text/css" href="https://github.com/neecride/demo-test/mmo/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Niconne" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header>
-      <div class="features-splash">Game Catégories</div>
-      <div class="menu">
-        <div class="menu-container">
-          <div class="logo">
-            <img src="https://neecride.github.io/demo-test/images/400px-Logo_Guild_Wars_3.png" alt="logo">
-          </div>
-          
-          <!-- Bouton burger (apparaît sur mobile/tablette) -->
-          <div class="menu-burger" id="menuBurger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          
-          <ul>
-            <li><a href="#1">home</a></li>
-            <li><a href="#2">forum</a></li>
-            <li><a href="#3">contact</a></li>
-          </ul>
-          
-          <div class="right-menu">
-            <a href="">Connexion</a>
-            <a href="">Inscription</a>
-          </div>
+    <nav class="menu">
+      <div class="menu-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">
+            <img src="https://github.com/neecride/demo-test/mmo/images/400px-Logo_Guild_Wars_3.png" alt="Logo">
+          </a>
+        </div>
+
+        <!-- Bouton Hamburger (mobile) -->
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+
+        <!-- Menu principal -->
+        <ul class="menu-nav">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#games">Jeux</a></li>
+          <li><a href="#news">Actualités</a></li>
+          <li><a href="#community">Communauté</a></li>
+          <li><a href="#about">À propos</a></li>
+        </ul>
+
+        <!-- Menu de droite -->
+        <div class="right-menu">
+          <a href="#login">Connexion</a>
+          <a href="#register">S'inscrire</a>
         </div>
       </div>
+    </nav>
+
+    <header>
+      <div class="mask"></div>
+      <div class="features-splash">Game Catégories</div>
+      <img src="../mmo/images/default.jpg" alt="">
     </header>
+
     <main>
 
       <div class="content-top">
         <!-- Vidéo en arrière-plan -->
         <video class="top-video" autoplay muted loop playsinline>
-          <source src="https://neecride.github.io/demo-test/vidéos/elden-ring-moewalls-com.mp4" type="video/mp4">
-          <source src="https://neecride.github.io/demo-test/vidéos/elden-ring-moewalls-com.mp4.webm" type="video/webm">
+          <source src="https://github.com/neecride/demo-test/mmo/vidéos/elden-ring-moewalls-com.mp4" type="video/mp4">
+          <source src="https://github.com/neecride/demo-test/mmo/vidéos/elden-ring-moewalls-com.mp4.webm" type="video/webm">
           Votre navigateur ne supporte pas les vidéos HTML5.
         </video>
         <div class="back-item"></div>
-        <img class="arrow-left" alt="" src="https://neecride.github.io/demo-test/images/arrow-left.png">
-        <img class="arrow-right" alt="" src="https://neecride.github.io/demo-test/images/arrow-right.png">
+        <img class="arrow-left" alt="" src="https://github.com/neecride/demo-test/mmo/images/arrow-left.png">
+        <img class="arrow-right" alt="" src="https://github.com/neecride/demo-test/mmo/images/arrow-right.png">
         <div class="features-wrapper">
           <div class="features">
             <a class="item" href="">
                 <div class="item-wraper">
-                  <img src="https://neecride.github.io/demo-test/images/cats/mmo.png" alt="">
+                  <img src="https://github.com/neecride/demo-test/mmo/images/cats/mmo.png" alt="">
                 </div>
               <span>MMO</span>
             </a>
             <a class="item" href="">
                 <div class="item-wraper">
-                  <img src="https://neecride.github.io/demo-test/images/cats/deck.png" alt="">
+                  <img src="https://github.com/neecride/demo-test/mmo/images/cats/deck.png" alt="">
                 </div>
               <span>Steam-Deck</span>
             </a>
             <a class="item" href="">
                 <div class="item-wraper">
-                  <img src="https://neecride.github.io/demo-test/images/cats/combat.png" alt="">
+                  <img src="https://github.com/neecride/demo-test/mmo/images/cats/combat.png" alt="">
                 </div>
               <span>Combat</span>
             </a>
             <a class="item" href="">
                 <div class="item-wraper">
-                  <img src="https://neecride.github.io/demo-test/images/cats/rpg.png" alt="">
+                  <img src="https://github.com/neecride/demo-test/mmo/images/cats/rpg.png" alt="">
                 </div>
               <span>Rpg</span>
             </a>
             <a class="item" href="">
                 <div class="item-wraper">
-                  <img src="https://neecride.github.io/demo-test/images/cats/course.png" alt="">
+                  <img src="https://github.com/neecride/demo-test/mmo/images/cats/course.png" alt="">
                 </div>
               <span>Course</span>
             </a>
             <!-- Groupe 2 (items 6-10) -->
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Action</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Stratégie</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Aventure</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Indie</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Simulation</span>
             </a>
@@ -119,31 +130,31 @@
             <!-- Groupe 3 (items 11-15) -->
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Sport</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src=".https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Puzzle</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>Racing</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>FPS</span>
             </a>
             <a class="item" href="">
               <div class="item-wraper">
-                <img src="https://neecride.github.io/demo-test/images/cats/cat.png" alt="">
+                <img src="https://github.com/neecride/demo-test/mmo/images/cats/cat.png" alt="">
               </div>
               <span>RTS</span>
             </a>
@@ -153,114 +164,204 @@
 
 
         <!-- Optionnel : image de fallback si la vidéo ne charge pas -->
-         <!-- <img class="top-img" src="https://neecride.github.io/demo-test/images/1.png" alt=""> -->
+        <!-- <img class="top-img" src="../mmo/images/1.png" alt=""> -->
       </div>
       
 
-      <div class="alert-box alert-black">
+
+      <div class="alert-box alert-rouge">
+          <div class="alert-box-title">Master Action Combat</div>
           <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, maiores laborum. Tempore, voluptatum! Est a dicta velit cumque, dolorem eius aliquam dolorum molestiae voluptate tempore</p>        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
           </div>
       </div>
 
-      <div class="content-base">
 
-        <div class="alert-box alert-rouge">
-            <div class="alert-box-content">
-              <div class="image-wrapper">
-                <img src="https://neecride.github.io/demo-test/images/fh8pgfrkzcxikgwizdc58aa3-overview-explore.max.jpg" alt="">
+      <div class="news">
+        <!-- Colonne de gauche : 2 boxes par ligne -->
+        <div class="news-grid">
+
+          <!-- Box 1 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vero maxime minima, ab omnis autem provident temporibus illo? Sapiente illum vitae nemo architecto eum voluptates dolores dicta nulla, dolor culpa.</p>
-            </div>
-        </div>
-
-        <div class="alert-box alert">
-            <div class="alert-box-content">
-              <div class="image-wrapper">
-                <img src="https://neecride.github.io/demo-test/images/hq58d46g2xeu2286obcgock5-overview-action-combat.max.jpg" alt="">
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
             </div>
-        </div>
-
-  
-        <div class="alert-box alert">
-            <div class="alert-box-content">
-              <div class="image-wrapper">
-                <img src="https://neecride.github.io/demo-test/images/n8v791s8lpu09gsgbxfiwcym-overview-join-vaelwardens.max.jpg" alt="">
+            <div class="box-news">
+              <h4>Titre de l'article 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box-bottom">
+            <span>Lire la suite →</span>
+            </div>
+          </div>
+          
+          <!-- Box 2 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
             </div>
-        </div>
+            <div class="box-news">
+              <h4>Titre de l'article 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box-bottom">
+              <span>Lire la suite →</span>
+            </div>
+          </div>
+          
+          <!-- Box 3 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
+              </div>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
+            </div>
+            <div class="box-news">
+              <h4>Titre de l'article 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellat praesentium minima vero libero itaque perferendis voluptate sequi atque nam fuga autem quaerat nihil iure consectetur, nostrum, ipsa animi hic.
+              </p>
+            </div>
+            <div class="box-bottom">
+              <span>Lire la suite →</span>
+            </div>
+          </div>
+          
+          <!-- Box 4 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
+              </div>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
+            </div>
+            <div class="box-news">
+              <h4>Titre de l'article 4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box-bottom">
+              <span>Lire la suite →</span>
+            </div>
+          </div>
 
-        <div class="alert-box alert">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+          <!-- Box 5 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
+              </div>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
             </div>
-        </div>
+            <div class="box-news">
+              <h4>Titre de l'article 5</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="box-bottom">
+            <span>Lire la suite →</span>
+            </div>
+          </div>
 
-        <div class="alert-box alert">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+          
+          <!-- Box 2 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
+              </div>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
             </div>
-        </div>
-
-        <div class="alert-box alert">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            <div class="box-news">
+              <h4>Titre de l'article 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-
-        <div class="alert-box alert-vert">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            <div class="box-bottom">
+              <span>Lire la suite →</span>
             </div>
-        </div>
-
-        <div class="alert-box alert-turquoise">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+          </div>
+          
+          <!-- Box 2 -->
+          <div class="box">
+            <div class="vignette">
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Juin</span>
+              </div>
+              <div class="vignette-image">
+                <img src="https://github.com/neecride/demo-test/mmo/images/b64998afc5.jpg" alt="News image">
+              </div>
             </div>
-        </div>
-
-        <div class="alert-box alert-bleu">
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+            <div class="box-news">
+              <h4>Titre de l'article 6</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+            <div class="box-bottom">
+              <span>Lire la suite →</span>
+            </div>
+          </div>
+          <!-- Ajoutez autant de boxes que vous voulez, elles s'aligneront 2 par 2 -->
         </div>
         
-        <div class="alert-box alert-brown">
-            <div class="alert-box-title">Lorem</div>
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-            </div>
-        </div>
+        <!-- Colonne de droite : Sidebar -->
+        <div class="news-sidebar">
+          <div class="box-column">
+            <h3>À la une</h3>
+            <ul>
+              <li><a href="#">Article populaire 1</a></li>
+              <li><a href="#">Article populaire 2</a></li>
+              <li><a href="#">Article populaire 3</a></li>
+              <li><a href="#">Article populaire 4</a></li>
+            </ul>
+          </div>
+          
+          <div class="box-column">
+            <h3>Catégories</h3>
+            <ul>
+              <li><a href="#">MMO</a></li>
+              <li><a href="#">RPG</a></li>
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Stratégie</a></li>
+            </ul>
+          </div>
+          
 
-        <div class="alert-box alert-black">
-            <div class="alert-box-title">Lorem</div>
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-            </div>
-        </div>
 
-        <div class="alert-box alert-violet">
-            <div class="alert-box-title">lorem </div>
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-            </div>
         </div>
       </div>
 
-      <div class="content-bottom">
-        <div class="alert-box alert-marine">
-            <div class="alert-box-title">Master Action Combat</div>
-            <div class="alert-box-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
-            </div>
-        </div>
+
+      <div class="alert-box alert-marine">
+          <div class="alert-box-title">Master Action Combat</div>
+          <div class="alert-box-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae odio labore illo, ea suscipit laboriosam quam eius iure sapiente quas nulla corrupti dolorum facilis alias autem voluptatibus iste commodi.</p>
+          </div>
       </div>
+
 
     </main>
 <footer class="footer">
@@ -441,15 +542,60 @@
 
 
   <script>
-    // À ajouter dans votre fichier JS ou dans une balise <script>
-  const menuBurger = document.getElementById('menuBurger');
-  const menuUl = document.querySelector('.menu ul');
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuNav = document.querySelector('.menu-nav');
+  const overlay = document.createElement('div');
+  overlay.className = 'menu-overlay';
+  document.body.appendChild(overlay);
 
-  if (menuBurger) {
-    menuBurger.addEventListener('click', function() {
-      menuUl.classList.toggle('active');
-    });
+  // Fonction pour ouvrir/fermer le menu
+  function toggleMenu() {
+    const isOpen = menuToggle.classList.toggle('active');
+    menuNav.classList.toggle('open');
+    overlay.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
   }
+
+  // Événement click sur le hamburger
+  menuToggle.addEventListener('click', toggleMenu);
+
+  // Événement click sur l'overlay (ferme le menu)
+  overlay.addEventListener('click', function() {
+    if (menuNav.classList.contains('open')) {
+      toggleMenu();
+    }
+  });
+
+  // Événement click sur les liens du menu (ferme le menu)
+  const menuLinks = menuNav.querySelectorAll('a');
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 992 && menuNav.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Fermer le menu avec la touche ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && menuNav.classList.contains('open')) {
+      toggleMenu();
+    }
+  });
+
+  // Gestion du redimensionnement
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (window.innerWidth > 992 && menuNav.classList.contains('open')) {
+        toggleMenu();
+      }
+    }, 250);
+  });
+});
   </script>
   </body>
 </html>
